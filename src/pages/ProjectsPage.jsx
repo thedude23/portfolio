@@ -239,10 +239,10 @@ const AboutPage = () => {
                 <h4>Portfolio</h4>
                 <img src={portfolioImg} alt="My Project" />
                 <div className={styles.projectBtns}>
-                  <a href="https://tim-koprivnik.github.io/tim-koprivnik/" target="blank" className={styles.projectBtn}>
+                  <a href="https://tim-koprivnik.netlify.app/" target="blank" className={styles.projectBtn}>
                     <AiFillEye /> View
                   </a>
-                  <a href="https://github.com/tim-koprivnik/tim-koprivnik" target="blank" className={styles.projectBtn}>
+                  <a href="https://github.com/tim-koprivnik/portfolio" target="blank" className={styles.projectBtn}>
                     <AiFillGithub /> Github
                   </a>
                 </div>
