@@ -1,7 +1,7 @@
 @import '../scss/library/index';
 
 footer {
-  bottom: $gap;
+  bottom: $gap-double;
   color: $color-2;
   font-size: $font-size-sm;
   position: fixed;
@@ -35,5 +35,9 @@ footer {
         }
       }
     }
+  }
+
+  .copyright {
+    margin-right: $gap-half;
   }
 }

@@ -22,7 +22,7 @@ const Footer = () => {
         </a>
       </section>
 
-      <div className="copyright">&copy; Copyright {new Date().getFullYear()}</div>
+      <div className={styles.copyright}>&copy; Copyright {new Date().getFullYear()}</div>
     </footer>
   );
 };
