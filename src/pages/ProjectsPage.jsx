@@ -110,6 +110,39 @@ const AboutPage = () => {
               </div>
 
               <div className={styles.project}>
+                <h4>Website (WordPress)</h4>
+                <LazyLoadImage img src={subsidiumImg} alt="Subsidium project" />
+                <div className={styles.projectBtns}>
+                  <a href="https://obnovadoma.subsidium.si/" target="blank" className={styles.projectBtn}>
+                    <AiFillEye /> View
+                  </a>
+                </div>
+              </div>
+
+              <div className={styles.project}>
+                <h4>Blog (WordPress)</h4>
+                <LazyLoadImage img src={somethingDifferentImg} alt="Something Different project" />
+                <div className={styles.projectBtns}>
+                  <a href="https://blog-something-different.com/en/" target="blank" className={styles.projectBtn}>
+                    <AiFillEye /> View
+                  </a>
+                </div>
+              </div>
+
+              <div className={styles.project}>
+                <h4>Website template</h4>
+                <LazyLoadImage img src={oganiImg} alt="Ogani project" />
+                <div className={styles.projectBtns}>
+                  <a href="https://ktix-ogani.netlify.app/" target="blank" className={styles.projectBtn}>
+                    <AiFillEye /> View
+                  </a>
+                  <a href="https://github.com/tim-koprivnik/ogani" target="blank" className={styles.projectBtn}>
+                    <AiFillGithub /> Code
+                  </a>
+                </div>
+              </div>
+
+              <div className={styles.project}>
                 <h4>Website template</h4>
                 <LazyLoadImage img src={natoursImg} alt="Natours project" />
                 <div className={styles.projectBtns}>
@@ -149,7 +182,7 @@ const AboutPage = () => {
               </div>
 
               <div className={styles.project}>
-                <h4>Website template and design</h4>
+                <h4>Website template & design</h4>
                 <LazyLoadImage img src={soundwaveImg} alt="Soundwave project" />
                 <div className={styles.projectBtns}>
                   <a href="https://ktix-soundwave.netlify.app/" target="blank" className={styles.projectBtn}>
@@ -169,39 +202,6 @@ const AboutPage = () => {
                     <AiFillEye /> View
                   </a>
                   <a href="https://github.com/tim-koprivnik/netflix-clone" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Website (WordPress)</h4>
-                <LazyLoadImage img src={subsidiumImg} alt="Subsidium project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://obnovadoma.subsidium.si/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Blog (WordPress)</h4>
-                <LazyLoadImage img src={somethingDifferentImg} alt="Something Different project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://blog-something-different.com/en/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Website template</h4>
-                <LazyLoadImage img src={oganiImg} alt="Ogani project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-ogani.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/ogani" target="blank" className={styles.projectBtn}>
                     <AiFillGithub /> Code
                   </a>
                 </div>
