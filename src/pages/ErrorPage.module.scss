@@ -1,9 +1,17 @@
+@import '../scss/library/index';
+
 .error-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  h1 {
+    text-align: center;
+    min-width: 200px;
+    margin-bottom: $gap;
+  }
 
   button {
     border: none;
