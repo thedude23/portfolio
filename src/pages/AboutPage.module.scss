@@ -1,0 +1,29 @@
+@import '../scss/library/index';
+
+.about-page {
+  .jobs {
+    @include grid;
+    display: grid;
+    gap: $gap-double;
+    grid-template-rows: auto;
+
+    &__job {
+      @include card;
+      border: $border-default;
+      padding: $gap-double;
+
+      h4 {
+        padding: 0;
+      }
+
+      .jobs__job-details {
+        font-size: $font-size-sm;
+        margin: $gap 0;
+      }
+
+      p {
+        color: $color-4;
+      }
+    }
+  }
+}

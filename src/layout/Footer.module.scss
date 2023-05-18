@@ -1,0 +1,39 @@
+@import '../scss/library/index';
+
+footer {
+  bottom: $gap;
+  color: $color-2;
+  font-size: $font-size-sm;
+  position: fixed;
+  right: $gap;
+  text-align: right;
+
+  .social-icons {
+    bottom: $gap;
+    left: $gap;
+    position: fixed;
+
+    a {
+      text-decoration: none;
+      @include transition-ease;
+      color: $color-2;
+      font-size: $font-size-lg;
+
+      &:not(:last-of-type) {
+        padding: 0 $gap-half;
+      }
+
+      &:hover {
+        color: $color-link--hover;
+      }
+
+      i {
+        font-size: $font-size;
+
+        @include breakpoint(md) {
+          font-size: $font-size-lg;
+        }
+      }
+    }
+  }
+}

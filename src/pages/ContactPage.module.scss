@@ -1,0 +1,21 @@
+@import '../scss/library/index';
+
+.contact-page {
+  .contact {
+    @include center-element;
+    @include card;
+
+    .section__title {
+      text-align: center;
+    }
+
+    &__list {
+      @include flex;
+      flex-direction: column;
+
+      @include breakpoint(md) {
+        flex-direction: row;
+      }
+    }
+  }
+}

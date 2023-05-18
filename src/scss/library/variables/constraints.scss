@@ -1,0 +1,32 @@
+/* ----- */
+/* Constraints */
+/* ----- */
+
+// Gaps
+$gap: 1rem; // 10px
+$gap-quarter: $gap * 0.25; // 2.5px
+$gap-half: $gap * 0.5; // 5px
+$gap-and-half: $gap * 1.5; // 15px
+$gap-double: $gap * 2; // 20px
+$gap-triple: $gap * 3; // 30px
+$gap-quadruple: $gap * 4; // 40px
+$gap-fivetuple: $gap * 5; // 50px
+$gap-sextuple: $gap * 6; // 60px
+
+// Container widths
+$container-width: 80rem; // 800px
+
+// Header height
+$header-height: 5rem; // 50px
+
+// Main content padding
+$main-content-top-padding: 10rem;
+
+// Section padding
+$section-padding: $gap-double;
+
+// Button size
+$button-icon-size: 1.25rem;
+
+// Layout image width
+$layout-header-image-width: 18.75rem;

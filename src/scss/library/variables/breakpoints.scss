@@ -1,0 +1,29 @@
+/* ----- */
+/* Breakpoints */
+/* ----- */
+
+// Defined breakpoints (1st option)
+$breakpoints: (
+  'sm': (
+    min-width: 576px,
+  ),
+  'md': (
+    min-width: 768px,
+  ),
+  'lg': (
+    min-width: 992px,
+  ),
+  'xl': (
+    min-width: 1200px,
+  ),
+  'xxl': (
+    min-width: 1400px,
+  ),
+) !default;
+
+// Defined breakpoints (2nd option)
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;

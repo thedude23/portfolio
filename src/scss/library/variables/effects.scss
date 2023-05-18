@@ -1,0 +1,48 @@
+/* ----- */
+/* Effects */
+/* ----- */
+
+// Shadows (https://web.dev/learn/css/shadows/)
+$box-shadow: 0px 0px 20px 5px $color-3;
+$image-shadow: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+
+// Border
+$border-default: 1px solid $color-border;
+$border-default--hover: 1px solid $color-border--hover;
+
+// Transitions / transformations (https://web.dev/learn/css/transitions/)
+$circle: circle(50%);
+$polygon: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+$rotate: rotateX(10deg) rotateY(10deg) rotateZ(10deg);
+$rotate3d: rotate3d(1, 1, 1, 10deg);
+$scale: scaleX(1.2) scaleY(1.2);
+$translate: translateX(40px) translateY(25px);
+$skew: skew(10deg);
+
+// Gradients (https://web.dev/learn/css/gradients/)
+$linear-gradient: linear-gradient(-45deg, blue -30%, transparent 80%),
+  linear-gradient(45deg, darkred 20%, crimson, darkorange 60%, gold, bisque);
+$radial-gradient: radial-gradient(darkred 20%, crimson, darkorange 60%, gold, bisque);
+$radial-gradient-2: radial-gradient(closest-side, darkorange 60%, gold, bisque, darkred 20%, crimson);
+$conic-gradient: conic-gradient(white, black);
+$conic-gradient-2: conic-gradient(
+  gold 20deg,
+  lightcoral 20deg 190deg,
+  mediumturquoise 190deg 220deg,
+  plum 220deg 320deg,
+  steelblue 320deg
+);
+
+// Filters (https://web.dev/learn/css/filters/)
+$blur: blur(0.2em);
+$brightness: brightness(80%);
+$contrast: contrast(160%);
+$grayscale: grayscale(80%);
+$invert: invert(1);
+$opacity: opacity(0.3);
+$saturate: saturate(155%);
+$sepia: sepia(70%);
+$hue-rotate: hue-rotate(120deg);
+$backdrop-filter: blur(10px);
+
+// Blend Modes (https://web.dev/learn/css/blend-modes/)

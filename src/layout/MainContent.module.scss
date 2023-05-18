@@ -1,0 +1,14 @@
+@import '../scss/library/index';
+
+.main-content {
+  @include container;
+  flex-grow: 1;
+  position: relative;
+
+  padding-bottom: $main-content-top-padding !important;
+  padding-top: $main-content-top-padding !important;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0 2rem;
+  }
+}

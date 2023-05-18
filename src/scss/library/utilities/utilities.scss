@@ -1,0 +1,291 @@
+/* ----- */
+/* General utilities */
+/* ----- */
+
+.flex {
+  display: flex;
+  gap: $gap-double;
+}
+
+.grid {
+  display: grid;
+  gap: $gap-double;
+  grid-template-rows: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $container-width;
+  padding: 0 $gap-double;
+}
+
+// Screen reader only
+.sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+.bg-dark {
+  background-color: $color-1;
+}
+.bg-light {
+  background-color: $color-2;
+}
+.bg-white {
+  background-color: $color-3;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-dark {
+  color: $color-1;
+}
+.text-light {
+  color: $color-2;
+}
+.text-white {
+  color: $color-3;
+}
+
+/* ----- */
+/* Effects utilities */
+/* ----- */
+
+// Transitions / transformations effects
+.circle {
+  clip-path: $circle;
+}
+
+.polygon {
+  clip-path: $polygon;
+}
+
+.rotate {
+  transform: $rotate;
+}
+
+.rotate3d {
+  transform: $rotate3d;
+}
+
+.scale {
+  transform: $scale;
+}
+
+.translate {
+  transform: $translate;
+}
+
+.skew {
+  transform: $skew;
+}
+
+// Gradient effects
+.linear-gradient {
+  background: $linear-gradient;
+}
+
+.radial-gradient {
+  background: $radial-gradient;
+}
+
+.radial-gradient-2 {
+  background: $radial-gradient-2;
+}
+
+.conic-gradient {
+  background: $conic-gradient;
+}
+
+.conic-gradient-2 {
+  background: $conic-gradient-2;
+  border-radius: 50%;
+  border: 10px solid;
+}
+
+// Filter effects
+.blur {
+  filter: $blur;
+}
+
+.brightness {
+  filter: $brightness;
+}
+
+.contrast {
+  filter: $contrast;
+}
+
+.grayscale {
+  filter: $grayscale;
+}
+
+.invert {
+  filter: $invert;
+}
+
+.opacity {
+  filter: $opacity;
+}
+
+.saturate {
+  filter: $saturate;
+}
+
+.sepia {
+  filter: $sepia;
+}
+
+.hue-rotate {
+  filter: $hue-rotate;
+}
+
+.backdrop-filter {
+  backdrop-filter: $backdrop-filter;
+}
+
+// Text effects
+.vertical-text {
+  writing-mode: $writing-mode;
+}
+
+.text-orientation {
+  text-orientation: $text-orientation;
+}
+
+.text-shadow {
+  text-shadow: $text-shadow;
+}
+
+.text-light {
+  font-weight: $font-weight-thin;
+}
+
+.text-bold {
+  font-weight: $font-weight-bold;
+}
+
+.text-normal {
+  font-weight: $font-weight-regular;
+}
+
+// Blend modes effects
+.duotone {
+  max-width: 450px;
+  position: relative;
+  margin: 0 auto;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &::after {
+    background: $color-4;
+    mix-blend-mode: multiply;
+  }
+
+  &::before {
+    background: navy;
+    mix-blend-mode: lighten;
+  }
+}
+
+// Background effects
+.background-effect {
+  aspect-ratio: 1/1;
+  border: 0.5px solid hsla(0deg, 0%, 60%, 0.5);
+  padding: 1rem;
+
+  font-family: 'Google Sans', 'Google Sans Text', Roboto, sans-serif;
+  font-size: 10rem;
+  font-weight: bold;
+  text-align: center;
+
+  background-image: url('https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?auto=format&fit=crop&w=690&q=80');
+  background-size: contain;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+// Keyframes effects
+.pulser {
+  width: 30px;
+  height: 30px;
+  background: $color-4;
+  border-radius: 50%;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $color-4;
+    border-radius: 50%;
+    z-index: -1;
+
+    animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+  }
+}
+
+.grower {
+  width: 200px;
+  height: 80px;
+  background: $color-4;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  animation-name: grow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.mover {
+  width: 50px;
+  height: 50px;
+  background: $color-4;
+
+  animation: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(10, end);
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
