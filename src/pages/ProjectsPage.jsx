@@ -182,32 +182,6 @@ const AboutPage = () => {
               </div>
 
               <div className={styles.project}>
-                <h4>Website template & design</h4>
-                <LazyLoadImage img src={soundwaveImg} alt="Soundwave project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-soundwave.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/soundwave" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Netflix starter page template</h4>
-                <LazyLoadImage img src={netflixCloneImg} alt="Netflix clone project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-netflix.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/netflix-clone" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
                 <h4>Website template</h4>
                 <LazyLoadImage img src={crispStudioImg} alt="Crisp studio project" />
                 <div className={styles.projectBtns}>
@@ -221,6 +195,19 @@ const AboutPage = () => {
               </div>
 
               <div className={styles.project}>
+                <h4>Website template & design</h4>
+                <LazyLoadImage img src={soundwaveImg} alt="Soundwave project" />
+                <div className={styles.projectBtns}>
+                  <a href="https://ktix-soundwave.netlify.app/" target="blank" className={styles.projectBtn}>
+                    <AiFillEye /> View
+                  </a>
+                  <a href="https://github.com/tim-koprivnik/soundwave" target="blank" className={styles.projectBtn}>
+                    <AiFillGithub /> Code
+                  </a>
+                </div>
+              </div>
+
+              <div className={styles.project}>
                 <h4>Website template (Shopify)</h4>
                 <LazyLoadImage img src={allbirdsImg} alt="Allbirds project" />
                 <div className={styles.projectBtns}>
@@ -228,6 +215,19 @@ const AboutPage = () => {
                     <AiFillEye /> View
                   </a>
                   <a href="https://github.com/tim-koprivnik/allbirds" target="blank" className={styles.projectBtn}>
+                    <AiFillGithub /> Code
+                  </a>
+                </div>
+              </div>
+
+              <div className={styles.project}>
+                <h4>Netflix starter page template</h4>
+                <LazyLoadImage img src={netflixCloneImg} alt="Netflix clone project" />
+                <div className={styles.projectBtns}>
+                  <a href="https://ktix-netflix.netlify.app/" target="blank" className={styles.projectBtn}>
+                    <AiFillEye /> View
+                  </a>
+                  <a href="https://github.com/tim-koprivnik/netflix-clone" target="blank" className={styles.projectBtn}>
                     <AiFillGithub /> Code
                   </a>
                 </div>
