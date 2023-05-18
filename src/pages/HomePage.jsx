@@ -19,10 +19,10 @@ const HomePage = () => {
                 <span>Thinker. </span>
                 <span>Sportsman. </span>
                 <span>Gamer. </span>
-                <span>Electro chill enthusiast. </span>
+                <span>Technology enthusiast. </span>
                 <span>Psychology nerd. </span>
                 <span>Passionate Antichrist of modern corporate world. </span>
-                <span>Fellow ape.</span>
+                <span>Fellow human.</span>
               </h2>
             </section>
           </MainContent>
