@@ -29,7 +29,7 @@ const AboutPage = () => {
 
               <h4>"Hard" skills</h4>
               <ul>
-                <li>Couple of years of work experience in the IT field</li>
+                <li>Around 4 years of work experience in the IT field</li>
                 <li>Excellent knowledge of HTML and CSS</li>
                 <li>Proficiency using CSS preprocessors (Sass)</li>
                 <li>Proficiency with front-end methodologies (BEM, SMACSS, Atomic design)</li>
