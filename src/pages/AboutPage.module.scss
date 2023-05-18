@@ -1,13 +1,30 @@
 @import '../scss/library/index';
 
 .about-page {
+  .page-title {
+    background-color: transparent;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: $font-size-md;
+
+    @include breakpoint(md) {
+      font-size: $font-size-lg;
+    }
+
+    @include breakpoint(lg) {
+      font-size: $font-size-xl;
+    }
+  }
+
   .jobs {
     @include grid;
     display: grid;
     gap: $gap-double;
     grid-template-rows: auto;
 
-    &__job {
+    .job {
       @include card;
       border: $border-default;
       padding: $gap-double;
@@ -16,7 +33,7 @@
         padding: 0;
       }
 
-      .jobs__job-details {
+      &-details {
         font-size: $font-size-sm;
         margin: $gap 0;
       }

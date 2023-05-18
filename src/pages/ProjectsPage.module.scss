@@ -1,14 +1,39 @@
 @import '../scss/library/index';
 
 .projects-page {
-  .projects {
-    &__items {
-      @include grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      margin-top: $section-padding;
+  .page-title {
+    background-color: transparent;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: $font-size-md;
+
+    @include breakpoint(md) {
+      font-size: $font-size-lg;
     }
 
-    &__item {
+    @include breakpoint(lg) {
+      font-size: $font-size-xl;
+    }
+  }
+
+  p {
+    a {
+      color: $color-2;
+
+      &:hover {
+        color: $color-4;
+      }
+    }
+  }
+
+  .projects {
+    @include grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: $section-padding;
+
+    .project {
       @include card;
       position: relative;
       overflow: hidden;
@@ -32,7 +57,7 @@
           display: none;
         }
 
-        .projects__btn {
+        .project-btn {
           opacity: 1;
         }
       }
@@ -52,7 +77,7 @@
       width: 100%;
     }
 
-    &__btns {
+    .project-btns {
       @include flex;
       align-items: center;
       text-align: center;
@@ -66,12 +91,15 @@
       width: 100%;
     }
 
-    &__btn {
+    .project-btn {
       opacity: 0;
       @include transition-ease;
+      color: $color-link--hover;
+      color: white;
+      text-decoration: none;
 
       &:hover {
-        color: $color-link--hover;
+        opacity: 1;
       }
     }
   }

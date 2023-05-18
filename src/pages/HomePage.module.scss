@@ -1,7 +1,6 @@
 @import '../scss/library/index';
 
 .home-page {
-  // @include breakout;
   content: '';
   top: 0;
   left: 0;
@@ -32,7 +31,7 @@
     width: 100%;
 
     h3,
-    &__intro {
+    &-intro {
       color: $color-text;
       font-size: $font-size-sm;
 
@@ -43,12 +42,12 @@
     }
 
     h1,
-    &__title {
+    &-title {
       @include breakout;
     }
 
     h2,
-    &__subtitle {
+    &-subtitle {
       color: $color-text;
       font-size: $font-size-sm;
 

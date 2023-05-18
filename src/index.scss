@@ -43,6 +43,7 @@ h1 {
   border: $border-default;
   font-size: $font-size-xl;
   padding: $gap-double 0;
+  text-transform: uppercase;
 
   @include breakpoint(md) {
     font-size: $font-size-xl;
@@ -117,6 +118,7 @@ h4 {
     font-size: $font-size-xxl;
   }
 
+  a,
   &__link {
     color: $color-link;
 

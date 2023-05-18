@@ -8,7 +8,6 @@ header {
   width: 100%;
   height: $header-height;
 
-  > div,
   .menu-btn {
     cursor: pointer;
     height: 20px;
@@ -23,7 +22,7 @@ header {
       display: none;
     }
 
-    &__burger {
+    &-burger {
       background: $color-2;
       height: 3px;
       position: absolute;
@@ -87,7 +86,6 @@ header {
       visibility: visible; // Visible on mobile and tablet by click on hamburger icon
     }
 
-    ul,
     .menu-nav {
       align-items: center;
       background: $color-1;
@@ -114,8 +112,7 @@ header {
         transform: translateY(0);
       }
 
-      li,
-      &__item {
+      &-item {
         transform: translateX(100vw);
         @include transition-ease;
 
@@ -127,14 +124,9 @@ header {
         &.open {
           transform: translateX(0);
         }
-
-        &.active > a {
-          color: $color-4;
-        }
       }
 
-      a,
-      &__link {
+      &-link {
         display: inline-block;
         font-weight: $font-weight-bold;
         padding: $gap-double 0;
@@ -146,13 +138,17 @@ header {
         &:hover {
           color: $color-link--hover;
         }
+
+        &.active {
+          color: $color-4;
+          text-decoration: underline;
+        }
       }
     }
   }
 
   @for $i from 1 through 4 {
-    // 4 because there are 4 links
-    .menu-nav__item:nth-child(#{$i}) {
+    .menu-nav-item:nth-child(#{$i}) {
       transition-delay: ($i * 0.1s) + 0.15s;
     }
   }

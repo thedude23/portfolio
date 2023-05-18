@@ -1,15 +1,15 @@
 @import '../scss/library/index';
 
 .contact-page {
+  .section-title {
+    text-align: center;
+  }
+
   .contact {
     @include center-element;
     @include card;
 
-    .section__title {
-      text-align: center;
-    }
-
-    &__list {
+    &-list {
       @include flex;
       flex-direction: column;
 

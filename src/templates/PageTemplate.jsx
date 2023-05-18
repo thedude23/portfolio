@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-import styles from './PageTemplate.module.scss';
 
 function PageTemplate({ sidebar, mainContent }) {
   return (
-    <div className={styles.page}>
+    <div>
       {sidebar}
       {mainContent}
     </div>
