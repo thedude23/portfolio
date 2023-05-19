@@ -22,8 +22,55 @@ import covidImg from '../assets/covid-19.jpg';
 import portfolioImg from '../assets/portfolio.png';
 import forkifyImg from '../assets/forkify.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { useEffect, useState } from 'react';
+
+const imageMap = {
+  'memegenerator.jpg': memeGeneratorImg,
+  'natours.png': natoursImg,
+  'nexter.png': nexterImg,
+  'soundwave.jpg': soundwaveImg,
+  'netflixclone.jpg': netflixCloneImg,
+  'piggame.jpg': pigGameImg,
+  'budgety.png': budgetyImg,
+  'subsidium.jpg': subsidiumImg,
+  'ogani.jpg': oganiImg,
+  'alivio.png': alivioImg,
+  'allbirds.png': allbirdsImg,
+  'something-different.png': somethingDifferentImg,
+  'trillo.png': trilloImg,
+  'crisp-studio.png': crispStudioImg,
+  'covid-19.jpg': covidImg,
+  'portfolio.png': portfolioImg,
+  'forkify.png': forkifyImg,
+};
 
 const AboutPage = () => {
+  const [data, setData] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setIsLoading(true);
+        const response = await fetch('../../projects.json');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const jsonData = await response.json();
+        setData(jsonData);
+      } catch (error) {
+        console.error('There was a problem fetching the data: ', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    fetchData();
+  }, []);
+
+  if (isLoading) {
+    return <p className={styles.apiLoading}>Loading...</p>;
+  }
+
   return (
     <>
       <Header />
@@ -35,223 +82,38 @@ const AboutPage = () => {
 
             <p>
               For more, check{' '}
-              <a href="https://github.com/tim-koprivnik" target="blank">
+              <a href="https://github.com/tim-koprivnik" target="_blank" rel="noreferrer noopener">
                 Github
               </a>
               .
             </p>
 
             <section className={styles.projects}>
-              <div className={styles.project}>
-                <h4>Portfolio (React)</h4>
-                <LazyLoadImage img src={portfolioImg} alt="Portfolio project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://tim-koprivnik.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/portfolio" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Meme Generator app (React)</h4>
-                <LazyLoadImage img src={memeGeneratorImg} alt="Meme Generator project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-meme-generator.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/memegenerator" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Forkify app (JS)</h4>
-                <LazyLoadImage img src={forkifyImg} alt="Forkify project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-forkify.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/forkify" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Pig Game (JS)</h4>
-                <br />
-                <LazyLoadImage img src={pigGameImg} alt="Pig game project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-piggame.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/piggame" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Budget app (JS)</h4>
-                <br />
-                <LazyLoadImage img src={budgetyImg} alt="Budgety project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-budgety.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/budgety" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Website (WordPress)</h4>
-                <LazyLoadImage img src={subsidiumImg} alt="Subsidium project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://obnovadoma.subsidium.si/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Blog (WordPress)</h4>
-                <LazyLoadImage img src={somethingDifferentImg} alt="Something Different project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://blog-something-different.com/en/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Website template</h4>
-                <LazyLoadImage img src={oganiImg} alt="Ogani project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-ogani.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/ogani" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Website template</h4>
-                <LazyLoadImage img src={natoursImg} alt="Natours project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-natours.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/natours" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Website template</h4>
-                <LazyLoadImage img src={nexterImg} alt="Nexter project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-nexter.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/nexter" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Website template</h4>
-                <LazyLoadImage img src={trilloImg} alt="Trillo project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-trillo.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/trillo" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Website template</h4>
-                <LazyLoadImage img src={crispStudioImg} alt="Crisp studio project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-crisp-studio.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/crisp-studio" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Website template & design</h4>
-                <LazyLoadImage img src={soundwaveImg} alt="Soundwave project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-soundwave.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/soundwave" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Website template (Shopify)</h4>
-                <LazyLoadImage img src={allbirdsImg} alt="Allbirds project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-allbirds.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/allbirds" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Netflix starter page template</h4>
-                <LazyLoadImage img src={netflixCloneImg} alt="Netflix clone project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://ktix-netflix.netlify.app/" target="blank" className={styles.projectBtn}>
-                    <AiFillEye /> View
-                  </a>
-                  <a href="https://github.com/tim-koprivnik/netflix-clone" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Design</h4>
-                <LazyLoadImage img src={covidImg} alt="Covid-19 project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://github.com/tim-koprivnik/covid" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.project}>
-                <h4>Design</h4>
-                <LazyLoadImage img src={alivioImg} alt="Alivio project" />
-                <div className={styles.projectBtns}>
-                  <a href="https://github.com/tim-koprivnik/alivio" target="blank" className={styles.projectBtn}>
-                    <AiFillGithub /> Code
-                  </a>
-                </div>
-              </div>
+              {data &&
+                data.projects &&
+                data.projects.map((project) => (
+                  <div className={styles.project} key={project.name}>
+                    <h4>{project.name}</h4>
+                    <p>{project.description}</p>
+                    <LazyLoadImage src={imageMap[project.image]} alt={project.description} />
+                    <div className={styles.projectBtns}>
+                      {project.links.map(
+                        (link) =>
+                          link.url && (
+                            <a
+                              href={link.url}
+                              target="_blank"
+                              rel="noreferrer noopener"
+                              className={styles.projectBtn}
+                              key={link.type}
+                            >
+                              {link.icon === 'AiFillEye' ? <AiFillEye /> : <AiFillGithub />} {link.type}
+                            </a>
+                          ),
+                      )}
+                    </div>
+                  </div>
+                ))}
             </section>
           </MainContent>
         }

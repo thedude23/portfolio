@@ -1,0 +1,76 @@
+{
+  "hardSkills": [
+    "Around 4 years of work experience in the IT field",
+    "Excellent knowledge of HTML and CSS",
+    "Proficiency using CSS preprocessors (Sass)",
+    "Proficiency with front-end methodologies (BEM, SMACSS, Atomic design)",
+    "Good knowledge of JavaScript (ES6), also jQuery",
+    "Good knowledge of React",
+    "Experience with Next.js",
+    "Basic knowledge of PHP",
+    "Familiarity with modern back-end frameworks (Laravel)",
+    "Knowledge of interacting with APIs",
+    "Experience working with databases (MySQL, Postgres)",
+    "Experience working with package managers (composer, npm, yarn), pre-processors (Sass, Babel), bundlers (Webpack), task runners (gulp), code linters (ESLint, Stylelint)",
+    "Experience with CMS (Drupal, WordPress)",
+    "Proficiency with code versioning tools (Git, GitHub Desktop) and experience with code review",
+    "Knowledge of web accessibility standards and guidelines",
+    "Proficiency with cross-browser and cross-device testing sites (Browserstack, LambdaTest)",
+    "Experience with Terminal, Docker, and other local environment setups (MAMP)",
+    "Experience with Putty, WinSCP, SSH, FileZilla, cPanel",
+    "Experience with page load speed optimization (Lighthouse, PageSpeed Insights)",
+    "Experience with SEO",
+    "Solid understanding of UI/UX principles",
+    "Experience working with Adobe XD / Figma",
+    "Experienced with Agile scrum methodology",
+    "Proficiency with project management and team communication tools (Jira, Basecamp, Trello, Freshdesk, Slack)",
+    "Experience with Project management role",
+    "Experience with Technical Support role"
+  ],
+  "softSkills": [
+    "Active knowledge of the English language",
+    "Disciplined and organized",
+    "Self-motivated, curious, and persistent",
+    "Fast learner",
+    "Kind, non-conﬂicting, open-minded, and, above else, fair",
+    "Natural psychologist"
+  ],
+  "jobs": [
+    {
+      "title": "Frontend Developer",
+      "company": "Agiledrop",
+      "type": "Full-time",
+      "period": "Aug 2021 - Present",
+      "location": "Remote",
+      "tasks": ["Developing & maintaining websites and web applications", "Project management"],
+      "skills": ["Twig", "CSS", "JavaScript", "React.js", "Drupal"]
+    },
+    {
+      "title": "Web Developer & Designer",
+      "company": "Interstellar Support; WEB-TIX, Tim Koprivnik s.p.",
+      "type": "Freelance",
+      "period": "Apr 2021 - Aug 2021 · 5 mos",
+      "location": "Remote",
+      "tasks": ["Developing & maintaining websites", "Designing websites", "Technical support"],
+      "skills": ["Technical Support", "CSS", "PHP", "WordPress", "Figma"]
+    },
+    {
+      "title": "Wordpress Developer",
+      "company": "citiesapps",
+      "type": "Full-time",
+      "period": "Nov 2020 - Apr 2021 · 6 mos",
+      "location": "Graz, Styria, Austria",
+      "tasks": ["Developing & maintaining websites", "WordPress plugin development"],
+      "skills": ["PHP", "JavaScript", "React.js", "WordPress", "Adobe XD"]
+    },
+    {
+      "title": "Web Developer & Designer",
+      "company": "Adverta - digital marketing",
+      "type": "Contract",
+      "period": "Aug 2019 - Oct 2020 · 1 yr 3 mos",
+      "location": "Maribor, Slovenia",
+      "tasks": ["Developing web adds", "Designing web ads", "Technical support"],
+      "skills": ["CSS", "JavaScript", "jQuery", "HTML", "Adobe Photoshop"]
+    }
+  ]
+}

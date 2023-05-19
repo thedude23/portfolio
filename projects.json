@@ -1,0 +1,293 @@
+{
+  "projects": [
+    {
+      "name": "Portfolio",
+      "image": "portfolio.png",
+      "description": "Portfolio website in React",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://tim-koprivnik.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/portfolio",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Meme Generator",
+      "image": "memegenerator.jpg",
+      "description": "Meme Generator app in React",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://ktix-meme-generator.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/memegenerator",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Forkify",
+      "image": "forkify.png",
+      "description": "Food recipe app in Javascript",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://ktix-forkify.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/forkify",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "PigGame",
+      "image": "piggame.jpg",
+      "description": "Pig game in Javascript",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://ktix-piggame.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/piggame",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Budgety",
+      "image": "budgety.png",
+      "description": "Cost/expenses calculator app in Javascript",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://ktix-budgety.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/budgety",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Obnova doma",
+      "image": "subsidium.jpg",
+      "description": "Website in WordPress",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://obnovadoma.subsidium.si/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Something Different",
+      "image": "something-different.png",
+      "description": "Recipe blog in WordPress",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://blog-something-different.com/en/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Ogani",
+      "image": "ogani.jpg",
+      "description": "Website template in HTML & CSS",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://ktix-ogani.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/ogani",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Natours",
+      "image": "natours.png",
+      "description": "Website template in HTML & CSS",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://ktix-natours.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/natours",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Nexter",
+      "image": "nexter.png",
+      "description": "Website template in HTML & CSS",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://ktix-nexter.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/nexter",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Trillo",
+      "image": "trillo.png",
+      "description": "Website template in HTML & CSS",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://ktix-trillo.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/trillo",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Crisp Studio",
+      "image": "crisp-studio.png",
+      "description": "Website template in HTML & CSS",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://ktix-crisp-studio.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/crisp-studio",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Soundwave",
+      "image": "soundwave.jpg",
+      "description": "Website template in HTML & CSS; design in Figma",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://ktix-soundwave.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/soundwave",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Allbirds",
+      "image": "allbirds.png",
+      "description": "Shopify Website template in HTML & CSS",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://ktix-allbirds.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/allbirds",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Netflix clone",
+      "image": "netflixclone.jpg",
+      "description": "Website template in HTML & CSS",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://ktix-netflix.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/netflix-clone",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Covid-19",
+      "image": "covid-19.jpg",
+      "description": "Design in Figma",
+      "links": [
+        {
+          "type": "View",
+          "url": "",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/covid",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
+      "name": "Alivio",
+      "image": "alivio.png",
+      "description": "Design in Figma",
+      "links": [
+        {
+          "type": "View",
+          "url": "",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/tim-koprivnik/alivio",
+          "icon": "AiFillGithub"
+        }
+      ]
+    }
+  ]
+}

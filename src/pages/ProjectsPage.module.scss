@@ -51,6 +51,10 @@
         @include transition-ease;
       }
 
+      p {
+        font-size: $font-size-sm;
+      }
+
       &:hover {
         p,
         img {
@@ -103,4 +107,8 @@
       }
     }
   }
+}
+
+.apiLoading {
+  @include center-element;
 }
