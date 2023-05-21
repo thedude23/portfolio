@@ -16,6 +16,12 @@
       @include breakpoint(md) {
         flex-direction: row;
       }
+
+      .contact-email,
+      .contact-phone {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }
