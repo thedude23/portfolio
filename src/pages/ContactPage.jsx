@@ -1,6 +1,8 @@
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import styles from './ContactPage.module.scss';
+import { BsFillEnvelopeFill } from 'react-icons/bs';
+import { BsFillTelephoneFill } from 'react-icons/bs';
 
 const ContactPage = () => {
   return (
@@ -12,13 +14,17 @@ const ContactPage = () => {
 
           <div className={styles.contactList}>
             <div className={styles.contactEmail}>
-              <i className="fas fa-envelope"></i> Email
-              <div className="text-secondary">t.koprivnik@gmail.com</div>
+              <span>
+                <BsFillEnvelopeFill /> Email
+              </span>
+              <a href="mailto:t.koprivnik@gmail.com">t.koprivnik@gmail.com</a>
             </div>
 
             <div className={styles.contactPhone}>
-              <i className="fas fa-mobile-alt"></i> Phone
-              <div className="text-secondary">(+386)51 412 337</div>
+              <span>
+                <BsFillTelephoneFill /> Phone
+              </span>
+              <a href="tel:0038651412337">(+386)51 412 337</a>
             </div>
           </div>
         </section>
