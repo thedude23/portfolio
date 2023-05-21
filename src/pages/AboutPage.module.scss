@@ -18,6 +18,17 @@
     }
   }
 
+  img {
+    display: none;
+
+    @include breakpoint(md) {
+      display: block;
+      height: 40rem;
+      float: left;
+      margin-right: $gap-double;
+    }
+  }
+
   .jobs {
     @include grid;
     display: grid;

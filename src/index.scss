@@ -26,6 +26,15 @@ p {
   word-spacing: normal;
 }
 
+a {
+  color: $color-2;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-4;
+  }
+}
+
 h1,
 h2,
 h3,
