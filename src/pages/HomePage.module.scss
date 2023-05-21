@@ -61,5 +61,19 @@
         color: $color-4;
       }
     }
+
+    blockquote {
+      font-size: $font-size-xsm;
+      text-transform: uppercase;
+      border-left: 4px solid $color-4;
+      padding: $gap;
+      margin: 0;
+      quotes: '\201C''\201D''\2018''\2019';
+
+      p {
+        display: inline;
+        color: $color-2;
+      }
+    }
   }
 }

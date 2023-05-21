@@ -42,7 +42,7 @@ h4,
 h5,
 h6 {
   color: $color-2;
-  font-family: $font-family-alt;
+  font-family: $font-family;
   letter-spacing: $letter-spacing-1;
   padding: $gap-double 0;
 }
@@ -101,7 +101,7 @@ h4 {
 
 // Headings
 @mixin heading-1(
-  $font-family: $font-family-alt,
+  $font-family: $font-family,
   $font-size: $font-size-lg,
   $line-height: $line-height,
   $color: $color-2,
@@ -138,7 +138,7 @@ h4 {
 }
 
 @mixin heading-2(
-  $font-family: $font-family-alt,
+  $font-family: $font-family,
   $font-size: $font-size-md,
   $line-height: $line-height,
   $color: $color-2,
@@ -174,7 +174,7 @@ h4 {
 }
 
 @mixin heading-3(
-  $font-family: $font-family-alt,
+  $font-family: $font-family,
   $font-size: $font-size,
   $line-height: $line-height,
   $color: $color-2,
