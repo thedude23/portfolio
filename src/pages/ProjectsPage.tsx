@@ -1,9 +1,12 @@
+import React, { useEffect, useState } from 'react';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import MainContent from '../layout/MainContent';
 import PageTemplate from '../templates/PageTemplate';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import styles from './ProjectsPage.module.scss';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import memeGeneratorImg from '../assets/memegenerator.jpg';
 import natoursImg from '../assets/natours.png';
 import nexterImg from '../assets/nexter.png';
@@ -21,8 +24,17 @@ import crispStudioImg from '../assets/crisp-studio.png';
 import covidImg from '../assets/covid-19.jpg';
 import portfolioImg from '../assets/portfolio.png';
 import forkifyImg from '../assets/forkify.png';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { useEffect, useState } from 'react';
+
+interface Project {
+  name: string;
+  description: string;
+  image: keyof typeof imageMap;
+  links: {
+    type: string;
+    url: string;
+    icon: 'AiFillEye' | 'AiFillGithub';
+  }[];
+}
 
 const imageMap = {
   'memegenerator.jpg': memeGeneratorImg,
@@ -44,8 +56,8 @@ const imageMap = {
   'forkify.png': forkifyImg,
 };
 
-const AboutPage = () => {
-  const [data, setData] = useState(null);
+const ProjectsPage: React.FC = () => {
+  const [data, setData] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -57,7 +69,7 @@ const AboutPage = () => {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const jsonData = await response.json();
-        setData(jsonData);
+        setData(jsonData.projects);
       } catch (error) {
         console.error('There was a problem fetching the data: ', error);
       } finally {
@@ -79,7 +91,6 @@ const AboutPage = () => {
           <MainContent className={styles.projectsPage}>
             <h1 className={styles.pageTitle}>Projects</h1>
             <h2 className={styles.sectionTitle}>Some of my personal projects</h2>
-
             <p>
               For more, check{' '}
               <a href="https://github.com/tim-koprivnik" target="_blank" rel="noreferrer noopener">
@@ -89,31 +100,26 @@ const AboutPage = () => {
             </p>
 
             <section className={styles.projects}>
-              {data &&
-                data.projects &&
-                data.projects.map((project) => (
-                  <div className={styles.project} key={project.name}>
-                    <h4>{project.name}</h4>
-                    <p>{project.description}</p>
-                    <LazyLoadImage src={imageMap[project.image]} alt={project.description} />
-                    <div className={styles.projectBtns}>
-                      {project.links.map(
-                        (link) =>
-                          link.url && (
-                            <a
-                              href={link.url}
-                              target="_blank"
-                              rel="noreferrer noopener"
-                              className={styles.projectBtn}
-                              key={link.type}
-                            >
-                              {link.icon === 'AiFillEye' ? <AiFillEye /> : <AiFillGithub />} {link.type}
-                            </a>
-                          ),
-                      )}
-                    </div>
+              {data.map((project) => (
+                <div className={styles.project} key={project.name}>
+                  <h4>{project.name}</h4>
+                  <p>{project.description}</p>
+                  <LazyLoadImage src={imageMap[project.image]} alt={project.description} />
+                  <div className={styles.projectBtns}>
+                    {project.links.map((link) => (
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className={styles.projectBtn}
+                        key={link.type}
+                      >
+                        {link.icon === 'AiFillEye' ? <AiFillEye /> : <AiFillGithub />} {link.type}
+                      </a>
+                    ))}
                   </div>
-                ))}
+                </div>
+              ))}
             </section>
           </MainContent>
         }
@@ -123,4 +129,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default ProjectsPage;
