@@ -4,7 +4,7 @@ import styles from './ContactPage.module.scss';
 import { BsFillEnvelopeFill } from 'react-icons/bs';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 
-const ContactPage = () => {
+const ContactPage: React.FC = () => {
   return (
     <>
       <Header />
