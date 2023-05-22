@@ -1,10 +1,11 @@
+import React from 'react';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import MainContent from '../layout/MainContent';
 import PageTemplate from '../templates/PageTemplate';
 import styles from './HomePage.module.scss';
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   return (
     <>
       <Header />
