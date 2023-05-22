@@ -1,13 +1,28 @@
+import React, { useEffect, useState } from 'react';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import MainContent from '../layout/MainContent';
 import PageTemplate from '../templates/PageTemplate';
 import styles from './AboutPage.module.scss';
 import imageOfMe from '../assets/me-2023.jpg';
-import { useEffect, useState } from 'react';
 
-const AboutPage = () => {
-  const [data, setData] = useState(null);
+interface AboutData {
+  hardSkills: string[];
+  softSkills: string[];
+  jobs: {
+    title: string;
+    company: string;
+    companyLink: string;
+    type: string;
+    period: string;
+    location: string;
+    tasks: string[];
+    skills: string[];
+  }[];
+}
+
+const AboutPage: React.FC = () => {
+  const [data, setData] = useState<AboutData | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -18,7 +33,7 @@ const AboutPage = () => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const jsonData = await response.json();
+        const jsonData: AboutData = await response.json();
         setData(jsonData);
       } catch (error) {
         console.error('There was a problem fetching the data: ', error);
@@ -57,39 +72,44 @@ const AboutPage = () => {
               <p>I don't like judging my own skills and knowledge, but if I have to, here it is.</p>
 
               <h4>"Hard" skills</h4>
-              <ul>{data && data.hardSkills && data.hardSkills.map((skill, index) => <li key={index}>{skill}</li>)}</ul>
+              <ul>
+                {data?.hardSkills.map((skill, index) => (
+                  <li key={index}>{skill}</li>
+                ))}
+              </ul>
               <h4>"Soft" skills</h4>
-              <ul>{data && data.softSkills && data.softSkills.map((skill, index) => <li key={index}>{skill}</li>)}</ul>
+              <ul>
+                {data?.softSkills.map((skill, index) => (
+                  <li key={index}>{skill}</li>
+                ))}
+              </ul>
             </section>
 
             <section className={styles.jobs}>
               <h2 className={styles.sectionTitle}>Jobs</h2>
-              {data &&
-                data.jobs &&
-                data.jobs.map((job, index) => (
-                  <article className={styles.job} key={index}>
-                    <h4>{job.title}</h4>
-                    <div className={styles.jobDetails}>
-                      <p>
-                        <a href={job.companyLink} target="_blank" rel="noreferrer noopener">
-                          {' '}
-                          {job.company}
-                        </a>{' '}
-                        · {job.type}
-                      </p>
-                      <p>{job.period}</p>
-                      <p>{job.location}</p>
-                    </div>
-                    <ul>
-                      {job.tasks.map((task, i) => (
-                        <li key={i}>{task}</li>
-                      ))}
-                      <li>
-                        <strong>Skills:</strong> {job.skills.join(' · ')}
-                      </li>
-                    </ul>
-                  </article>
-                ))}
+              {data?.jobs.map((job, index) => (
+                <article className={styles.job} key={index}>
+                  <h4>{job.title}</h4>
+                  <div className={styles.jobDetails}>
+                    <p>
+                      <a href={job.companyLink} target="_blank" rel="noreferrer noopener">
+                        {job.company}
+                      </a>{' '}
+                      · {job.type}
+                    </p>
+                    <p>{job.period}</p>
+                    <p>{job.location}</p>
+                  </div>
+                  <ul>
+                    {job.tasks.map((task, index) => (
+                      <li key={index}>{task}</li>
+                    ))}
+                    <li>
+                      <strong>Skills:</strong> {job.skills.join(' · ')}
+                    </li>
+                  </ul>
+                </article>
+              ))}
             </section>
           </MainContent>
         }
