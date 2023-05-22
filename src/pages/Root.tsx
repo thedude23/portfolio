@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 
-function RootLayout() {
+const RootLayout: React.FC = () => {
   return (
     <>
       <Header />
@@ -10,6 +10,6 @@ function RootLayout() {
       <Footer />
     </>
   );
-}
+};
 
 export default RootLayout;
