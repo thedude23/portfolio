@@ -2,8 +2,10 @@ import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import styles from './Header.module.scss';
 
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+interface Props {}
+
+const Header: React.FC<Props> = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleMenuClick = () => {
     setIsOpen((prevState) => !prevState);
@@ -18,22 +20,28 @@ const Header = () => {
       <nav className={isOpen ? `${styles.open}` : ''}>
         <ul className={isOpen ? `${styles.menuNav} ${styles.open}` : styles.menuNav}>
           <li className={isOpen ? `${styles.menuNavItem} ${styles.open}` : styles.menuNavItem}>
-            <NavLink exact to="/" className={styles.menuNavLink} activeClassName={styles.active}>
+            <NavLink to="/" className={({ isActive }) => `${styles.menuNavLink} ${isActive ? styles.active : ''}`}>
               Home
             </NavLink>
           </li>
           <li className={isOpen ? `${styles.menuNavItem} ${styles.open}` : styles.menuNavItem}>
-            <NavLink to="/about" className={styles.menuNavLink} activeClassName={styles.active}>
+            <NavLink to="/about" className={({ isActive }) => `${styles.menuNavLink} ${isActive ? styles.active : ''}`}>
               About Me
             </NavLink>
           </li>
           <li className={isOpen ? `${styles.menuNavItem} ${styles.open}` : styles.menuNavItem}>
-            <NavLink to="/projects" className={styles.menuNavLink} activeClassName={styles.active}>
+            <NavLink
+              to="/projects"
+              className={({ isActive }) => `${styles.menuNavLink} ${isActive ? styles.active : ''}`}
+            >
               My Projects
             </NavLink>
           </li>
           <li className={isOpen ? `${styles.menuNavItem} ${styles.open}` : styles.menuNavItem}>
-            <NavLink to="/contact" className={styles.menuNavLink} activeClassName={styles.active}>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => `${styles.menuNavLink} ${isActive ? styles.active : ''}`}
+            >
               Contact Me
             </NavLink>
           </li>
