@@ -9,4 +9,7 @@ export default defineConfig({
       localsConvention: 'camelCaseOnly',
     },
   },
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+  },
 });
