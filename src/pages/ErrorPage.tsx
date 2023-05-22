@@ -4,7 +4,7 @@ import PageTemplate from '../templates/PageTemplate';
 import MainContent from '../layout/MainContent';
 import styles from './ErrorPage.module.scss';
 
-const ErrorPage = () => {
+const ErrorPage: React.FC = () => {
   const navigate = useNavigate();
 
   const goBackHandler = () => {
