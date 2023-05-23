@@ -65,16 +65,22 @@ const AboutPage: React.FC = () => {
             <section className={styles.about}>
               <img src={imageOfMe} alt="Me" />
               <p>
-                An open-minded averagely-dressed human being in search of a peaceful, intentional, and unstressed life,
-                who likes to learn new things, self-improve, read, watch docuseries, do sports, travel, and meet unique
-                people. Two things I cannot live without are chill music and the feeling of not being stuck. One of my
-                idealistic life goals is to witness a world where money (or materialistic bs in general) wouldn't be the
-                primary goal of it all, and exploitation not an everyday human relation. Above all else, I try to be
-                fair and empathetic, and I expect the same from anyone else. In the end, I'm like Newton's 3rd law -- I
-                give what I get.
+                I'm an open-minded individual with a penchant for simplicity and peace. I place great value on living an
+                intentional life, free from unnecessary stress, and strive to cultivate a mindset of continuous learning
+                and personal growth. My interests span a broad spectrum, from diving into a good book, indulging in
+                insightful docuseries, engaging in various sports, exploring new places, and encountering diverse
+                people. Music serves as my soul's sanctuary and the sense of progress fuels my zest for life.
+                <br />
+                <br /> In an ideal world, I envision a society where the pursuit of money and materialistic possessions
+                is not the ultimate ambition, and where exploitation does not mar human relations. I dream of a world
+                that values empathy, kindness, and fairness over all else.
+                <br />
+                <br /> I live by the principle of Newton's 3rd law: reciprocity. The respect, kindness, and fairness I
+                receive inform how I respond. I strive to uphold fairness and empathy in my interactions and look
+                forward to meeting individuals who share the same values. Just like life, I believe that what you give
+                is what you get.
               </p>
               <br />
-              <p>I don't like judging my own skills and knowledge, but if I have to, here it is.</p>
 
               <h4>"Hard" skills</h4>
               <ul>

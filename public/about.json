@@ -1,25 +1,19 @@
 {
   "hardSkills": [
-    "Around 4 years of work experience in the IT field",
-    "Proficiency with HTML, CSS, and Javascript (ES6+)",
-    "Proficiency with React, and experience with Next.js and Typescript",
-    "Proficiency in interacting with APIs",
-    "Proficiency with package managers (composer, npm, yarn), pre-processors (Sass, Babel), bundlers (Webpack), task runners (gulp), code linters (ESLint, Stylelint), and code versioning tools (Git, GitHub Desktop)",
-    "Familiarity with front-end methodologies (BEM, SMACSS, Atomic design), and accessibility standards (WCAG)",
-    "Proficiency with speed optimization (Lighthouse, PageSpeed Insights), SEO, and cross-browser and cross-device testing (Browserstack, LambdaTest)",
-    "Experience with PHP and Laravel",
-    "Experience with databases (MySQL, Postgres)",
-    "Experience with CMS (Drupal, WordPress)",
-    "Understanding of Agile scrum methodology, project management, and everyday use of team communication tools (Jira, Basecamp, Trello, Freshdesk, Slack)",
-    "Understanding of UI/UX principles, and proficiency with web design tools (Adobe XD, Figma, Photoshop)",
-    "Experience with a Web Designer and Project management role"
+    "Proficiency in HTML, CSS, JavaScript (ES6+), React, and Typescript, as well as familiarity with Next.js",
+    "Experience in API integration, and proficiency with various development tools like npm, yarn, Webpack, Babel, and Git",
+    "Strong understanding of front-end methodologies (BEM, SMACSS, Atomic design) and accessibility standards (WCAG)",
+    "Expertise in optimizing speed (Lighthouse, PageSpeed Insights), SEO, and cross-browser and cross-device testing",
+    "Experience with MySQL, Postgres, PHP (Laravel), and CMS (Drupal, WordPress)",
+    "Proficiency with design tools like Adobe XD, Figma, Photoshop, and a strong understanding of UI/UX principles",
+    "Competence in Agile scrum methodology, project management tools, and team communication platforms"
   ],
   "softSkills": [
-    "Active knowledge of the English language",
-    "Reliability, dedication, self-motivation, discipline, organization, and helpfulness",
-    "Preparation to learn new things/skills and grow as a person",
-    "Kindness, open-mindedness, fairness",
-    "Natural inclination and intuition for understanding human behaviour"
+    "Advanced proficiency in English",
+    "Embodying reliability, dedication, and self-motivation",
+    "An organized approach with a strong desire to learn and grow",
+    "Open-minded and fair, with a focus on kindness",
+    "An intuitive understanding of diverse human behavior"
   ],
   "jobs": [
     {
