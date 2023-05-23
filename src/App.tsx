@@ -8,7 +8,7 @@ import ContactPage from './pages/ContactPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ReactGA from 'react-ga';
 
-const App: React.FC = () => {
+const RoutesComponent = () => {
   const location = useLocation();
 
   useEffect(() => {
@@ -16,16 +16,22 @@ const App: React.FC = () => {
   }, [location]);
 
   return (
+    <Routes>
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="contact" element={<ContactPage />} />
+        <Route path="projects" element={<ProjectsPage />} />
+      </Route>
+      <Route path="*" element={<ErrorPage />} />
+    </Routes>
+  );
+};
+
+const App: React.FC = () => {
+  return (
     <Router>
-      <Routes>
-        <Route path="/" element={<RootLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="projects" element={<ProjectsPage />} />
-        </Route>
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
+      <RoutesComponent />
     </Router>
   );
 };
