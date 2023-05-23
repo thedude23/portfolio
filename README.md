@@ -1,6 +1,6 @@
 # My Portfolio
 
-This portfolio was created using [React](https://reactjs.org/) and [Vite](https://vitejs.dev/), featuring a sleek, responsive design to showcase projects and skills.
+This portfolio website was created using [React](https://reactjs.org/) and [Vite](https://vitejs.dev/), featuring a sleek, responsive design to showcase projects and skills.
 
 ## Features
 
