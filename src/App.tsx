@@ -1,12 +1,20 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import RootLayout from './pages/Root';
 import ErrorPage from './pages/ErrorPage';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ProjectsPage from './pages/ProjectsPage';
+import ReactGA from 'react-ga';
 
 const App: React.FC = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
+
   return (
     <Router>
       <Routes>
