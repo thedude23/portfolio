@@ -25,10 +25,10 @@ const HomePage: React.FC = () => {
                 <span>Thinker. </span>
                 <span>Sportsman. </span>
                 <span>Gamer. </span>
-                <span>Technology enthusiast. </span>
-                <span>Psychology nerd. </span>
-                <span>Passionate Antichrist of modern corporate world. </span>
-                <span>Fellow human.</span>
+                <span>Tech Enthusiast. </span>
+                <span>Psychology Aficionado. </span>
+                <span>Vocal Critic of Modern Corporate Practices. </span>
+                <span>Fellow Human. </span>
               </h2>
             </section>
           </MainContent>
