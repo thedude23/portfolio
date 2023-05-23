@@ -5,6 +5,7 @@ import MainContent from '../layout/MainContent';
 import PageTemplate from '../templates/PageTemplate';
 import styles from './AboutPage.module.scss';
 import imageOfMe from '../assets/me-2023.jpg';
+import { Helmet } from 'react-helmet';
 
 interface AboutData {
   hardSkills: string[];
@@ -50,6 +51,10 @@ const AboutPage: React.FC = () => {
 
   return (
     <>
+      <Helmet>
+        <title>About</title>
+        <meta name="description" content="About me page" />
+      </Helmet>
       <Header />
       <PageTemplate
         mainContent={

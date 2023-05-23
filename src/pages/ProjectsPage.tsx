@@ -6,7 +6,7 @@ import PageTemplate from '../templates/PageTemplate';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import styles from './ProjectsPage.module.scss';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-
+import { Helmet } from 'react-helmet';
 import memeGeneratorImg from '../assets/memegenerator.jpg';
 import natoursImg from '../assets/natours.png';
 import nexterImg from '../assets/nexter.png';
@@ -85,6 +85,10 @@ const ProjectsPage: React.FC = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Projects</title>
+        <meta name="description" content="Projects page" />
+      </Helmet>
       <Header />
       <PageTemplate
         mainContent={

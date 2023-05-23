@@ -3,10 +3,15 @@ import Footer from '../layout/Footer';
 import styles from './ContactPage.module.scss';
 import { BsFillEnvelopeFill } from 'react-icons/bs';
 import { BsFillTelephoneFill } from 'react-icons/bs';
+import { Helmet } from 'react-helmet';
 
 const ContactPage: React.FC = () => {
   return (
     <>
+      <Helmet>
+        <title>Contact</title>
+        <meta name="description" content="Contact page" />
+      </Helmet>
       <Header />
       <main className={styles.contactPage}>
         <section className={styles.contact}>

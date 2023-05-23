@@ -4,10 +4,15 @@ import Footer from '../layout/Footer';
 import MainContent from '../layout/MainContent';
 import PageTemplate from '../templates/PageTemplate';
 import styles from './HomePage.module.scss';
+import { Helmet } from 'react-helmet';
 
 const HomePage: React.FC = () => {
   return (
     <>
+      <Helmet>
+        <title>Tim Koprivnik</title>
+        <meta name="description" content="Home page" />
+      </Helmet>
       <Header />
       <PageTemplate
         mainContent={
