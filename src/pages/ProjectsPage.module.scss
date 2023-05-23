@@ -89,7 +89,7 @@
       opacity: 0;
       @include transition-ease;
       color: $color-link--hover;
-      color: white;
+      color: $color-3;
       text-decoration: none;
 
       &:hover {
