@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import styles from './ProjectsPage.module.scss';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import MainContent from '../layout/MainContent';
 import PageTemplate from '../templates/PageTemplate';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
-import styles from './ProjectsPage.module.scss';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Helmet } from 'react-helmet';
+import useFetchData from '../hooks/useFetchData';
 import memeGeneratorImg from '../assets/memegenerator.jpg';
 import natoursImg from '../assets/natours.png';
 import nexterImg from '../assets/nexter.png';
@@ -25,18 +25,24 @@ import covidImg from '../assets/covid-19.jpg';
 import portfolioImg from '../assets/portfolio.png';
 import forkifyImg from '../assets/forkify.png';
 
-interface Project {
-  name: string;
-  description: string;
-  image: keyof typeof imageMap;
-  links: {
-    type: string;
-    url: string;
-    icon: 'AiFillEye' | 'AiFillGithub';
-  }[];
+interface Link {
+  type: string;
+  url: string;
+  icon: string;
 }
 
-const imageMap = {
+interface Project {
+  name: string;
+  image: keyof typeof imageMap;
+  description: string;
+  links: Link[];
+}
+
+interface ProjectsData {
+  projects: Project[];
+}
+
+const imageMap: { [key: string]: string } = {
   'memegenerator.jpg': memeGeneratorImg,
   'natours.png': natoursImg,
   'nexter.png': nexterImg,
@@ -57,30 +63,14 @@ const imageMap = {
 };
 
 const ProjectsPage: React.FC = () => {
-  const [data, setData] = useState<Project[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setIsLoading(true);
-        const response = await fetch('../../projects.json');
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const jsonData = await response.json();
-        setData(jsonData.projects);
-      } catch (error) {
-        console.error('There was a problem fetching the data: ', error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-    fetchData();
-  }, []);
+  const [data, isLoading, error] = useFetchData<ProjectsData>('../../projects.json');
 
   if (isLoading) {
-    return <p className={styles.apiLoading}>Loading...</p>;
+    return <p className={styles.apiText}>Loading...</p>;
+  }
+
+  if (error) {
+    return <p className={styles.apiText}>Error: {error.message}</p>;
   }
 
   return (
@@ -104,21 +94,22 @@ const ProjectsPage: React.FC = () => {
             </p>
 
             <section className={styles.projects}>
-              {data.map((project) => (
-                <div className={styles.project} key={project.name}>
-                  <h4>{project.name}</h4>
+              {data?.projects?.map((project: Project, index: number) => (
+                <div className={styles.project} key={index}>
+                  <img src={imageMap[project.image]} alt={project.name} />
+                  <h3>{project.name}</h3>
                   <p>{project.description}</p>
-                  <LazyLoadImage src={imageMap[project.image]} alt={project.description} />
-                  <div className={styles.projectBtns}>
-                    {project.links.map((link) => (
+                  <div className={styles.links}>
+                    {project.links.map((link: Link, linkIndex: number) => (
                       <a
+                        key={linkIndex}
                         href={link.url}
+                        className={styles.link}
                         target="_blank"
-                        rel="noreferrer noopener"
-                        className={styles.projectBtn}
-                        key={link.type}
+                        rel="noopener noreferrer"
                       >
-                        {link.icon === 'AiFillEye' ? <AiFillEye /> : <AiFillGithub />} {link.type}
+                        <i className={`icon ${link.icon}`} />
+                        {link.type}
                       </a>
                     ))}
                   </div>

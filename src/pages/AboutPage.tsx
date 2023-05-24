@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import styles from './AboutPage.module.scss';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import MainContent from '../layout/MainContent';
 import PageTemplate from '../templates/PageTemplate';
-import styles from './AboutPage.module.scss';
-import imageOfMe from '../assets/me-2023.jpg';
+import useFetchData from '../hooks/useFetchData';
 import { Helmet } from 'react-helmet';
+import imageOfMe from '../assets/me-2023.jpg';
 
 interface AboutData {
   hardSkills: string[];
@@ -23,30 +23,14 @@ interface AboutData {
 }
 
 const AboutPage: React.FC = () => {
-  const [data, setData] = useState<AboutData | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setIsLoading(true);
-        const response = await fetch('../../about.json');
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const jsonData: AboutData = await response.json();
-        setData(jsonData);
-      } catch (error) {
-        console.error('There was a problem fetching the data: ', error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-    fetchData();
-  }, []);
+  const [data, isLoading, error] = useFetchData<AboutData>('../../about.json');
 
   if (isLoading) {
-    return <p className={styles.apiLoading}>Loading...</p>;
+    return <p className={styles.apiText}>Loading...</p>;
+  }
+
+  if (error) {
+    return <p className={styles.apiText}>Error: {error.message}</p>;
   }
 
   return (
@@ -84,13 +68,13 @@ const AboutPage: React.FC = () => {
 
               <h4>"Hard" skills</h4>
               <ul>
-                {data?.hardSkills.map((skill, index) => (
+                {data?.hardSkills?.map((skill, index) => (
                   <li key={index}>{skill}</li>
                 ))}
               </ul>
               <h4>"Soft" skills</h4>
               <ul>
-                {data?.softSkills.map((skill, index) => (
+                {data?.softSkills?.map((skill, index) => (
                   <li key={index}>{skill}</li>
                 ))}
               </ul>
@@ -98,7 +82,7 @@ const AboutPage: React.FC = () => {
 
             <section className={styles.jobs}>
               <h2 className={styles.sectionTitle}>Jobs</h2>
-              {data?.jobs.map((job, index) => (
+              {data?.jobs?.map((job, index) => (
                 <article className={styles.job} key={index}>
                   <h4>{job.title}</h4>
                   <div className={styles.jobDetails}>
