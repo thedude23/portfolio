@@ -1,23 +1,28 @@
 @import '../scss/library/index';
 
 footer {
-  bottom: $gap-double;
+  bottom: $gap;
   color: $color-2;
   font-size: $font-size-sm;
   position: fixed;
-  right: $gap;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
 
   .social-icons {
-    bottom: $gap;
-    left: $gap;
-    position: fixed;
+    margin-top: $gap-half;
+    margin-left: $gap;
 
     a {
       text-decoration: none;
       @include transition-ease;
       color: $color-2;
-      font-size: $font-size-lg;
+      font-size: $font-size-sm;
+
+      @include breakpoint(sm) {
+        font-size: $font-size-lg;
+      }
 
       &:not(:last-of-type) {
         padding: 0 $gap-half;
@@ -26,18 +31,10 @@ footer {
       &:hover {
         color: $color-link--hover;
       }
-
-      i {
-        font-size: $font-size;
-
-        @include breakpoint(md) {
-          font-size: $font-size-lg;
-        }
-      }
     }
   }
 
   .copyright {
-    margin-right: $gap-half;
+    margin-right: $gap;
   }
 }

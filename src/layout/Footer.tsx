@@ -1,5 +1,6 @@
 import styles from './Footer.module.scss';
 import { FaTwitter, FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { HiDocumentDownload } from 'react-icons/hi';
 
 interface Props {}
 
@@ -21,9 +22,6 @@ const Footer: React.FC<Props> = () => {
         >
           <FaInstagram />
         </a>
-        <a href="https://github.com/tim-koprivnik" target="_blank" rel="noreferrer noopener" aria-label="Github">
-          <FaGithub />
-        </a>
         <a
           href="https://www.linkedin.com/in/tim-koprivnik-0238b4147/"
           target="_blank"
@@ -32,9 +30,15 @@ const Footer: React.FC<Props> = () => {
         >
           <FaLinkedinIn />
         </a>
+        <a href="https://github.com/tim-koprivnik" target="_blank" rel="noreferrer noopener" aria-label="Github">
+          <FaGithub />
+        </a>
+        <a href="/CV_Koprivnik_Tim.pdf" download aria-label="CV">
+          <HiDocumentDownload />
+        </a>
       </section>
 
-      <div className={styles.copyright}>&copy; Copyright {new Date().getFullYear()}</div>
+      <div className={styles.copyright}>&copy; {new Date().getFullYear()} Tim Koprivnik</div>
     </footer>
   );
 };
