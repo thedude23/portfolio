@@ -45,6 +45,10 @@
     h1,
     &-title {
       @include breakout;
+
+      span {
+        color: $color-3;
+      }
     }
 
     h2,

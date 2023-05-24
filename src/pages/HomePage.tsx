@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Tim Koprivnik</title>
+        <title>TK's portfolio</title>
         <meta name="description" content="Home page" />
       </Helmet>
       <Header />
@@ -19,7 +19,9 @@ const HomePage: React.FC = () => {
           <MainContent className={styles.homePage}>
             <section className={styles.hero}>
               <h3 className={styles.heroIntro}>Greetings, Digital Traveler!</h3>
-              <h1 className={styles.heroTitle}>Tim Koprivnik</h1>
+              <h1 className={styles.heroTitle}>
+                <span>T</span>im <span>K</span>oprivnik
+              </h1>
               <h2 className={styles.heroSubtitle}>
                 <span>Developer. </span>
                 <span>Thinker. </span>
