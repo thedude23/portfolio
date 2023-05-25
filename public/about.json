@@ -23,7 +23,11 @@
       "type": "Full-time",
       "period": "Aug 2021 - Present",
       "location": "Remote",
-      "tasks": ["Developing & maintaining websites and web applications", "Project management"],
+      "tasks": [
+        "Responsible for building and maintaining websites and web applications using Twig, (S)CSS, JavaScript, TypeScript, React.js, and Drupal",
+        "Collaborate effectively with team members and stakeholders to ensure high-quality project outcomes",
+        "Participate actively in project management tasks to ensure timely completion of projects"
+      ],
       "skills": ["Twig", "CSS", "JavaScript", "React.js", "Drupal"]
     },
     {
@@ -33,7 +37,11 @@
       "type": "Freelance",
       "period": "Apr 2021 - Aug 2021 (5 mos)",
       "location": "Remote",
-      "tasks": ["Developing & maintaining websites", "Designing websites", "Technical support"],
+      "tasks": [
+        "Developed and maintained websites using CSS, PHP, and WordPress",
+        "Utilized Figma for designing visually appealing and user-friendly websites",
+        "Provided technical support to clients to maintain optimal website functionality"
+      ],
       "skills": ["Technical Support", "CSS", "PHP", "WordPress", "Figma"]
     },
     {
@@ -43,7 +51,11 @@
       "type": "Full-time",
       "period": "Nov 2020 - Apr 2021 (6 mos)",
       "location": "Graz, Styria, Austria",
-      "tasks": ["Developing & maintaining websites", "WordPress plugin development", "Designing websites"],
+      "tasks": [
+        "Developed and maintained dynamic WordPress websites, incorporating custom plugins for enhanced functionality",
+        "Utilized programming languages such as PHP, JavaScript, and libraries like Frontity (React.js for WP) for efficient web development",
+        "Applied Adobe XD proficiency for designing engaging and user-friendly interfaces"
+      ],
       "skills": ["PHP", "JavaScript", "React.js", "WordPress", "Adobe XD"]
     },
     {
@@ -53,7 +65,11 @@
       "type": "Contract",
       "period": "Aug 2019 - Oct 2020 (1 yr 3 mos)",
       "location": "Maribor, Slovenia",
-      "tasks": ["Developing web adds", "Designing web ads", "Technical support"],
+      "tasks": [
+        "Worked on the development and design of web ads for different campaigns, using skills in CSS, JavaScript, jQuery, and HTML",
+        "Provided practical technical support and troubleshooting, ensuring smooth running of web ad campaigns",
+        "Utilized Adobe Photoshop to help design and enhance the appearance of ads"
+      ],
       "skills": ["CSS", "JavaScript", "jQuery", "HTML", "Adobe Photoshop"]
     }
   ]
