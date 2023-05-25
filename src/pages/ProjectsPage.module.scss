@@ -41,59 +41,56 @@
         @include transition-ease;
       }
 
-      p {
-        font-size: $font-size-sm;
-      }
-
       &:hover {
         p,
         img {
           display: none;
         }
 
-        .project-btn {
+        .project-link {
           opacity: 1;
         }
       }
-    }
 
-    h4 {
-      padding: 0;
-      font-size: $font-size-sm;
-      font-family: $font-family;
-    }
+      .project-name,
+      .project-description {
+        padding: 0;
+        font-size: $font-size-sm;
+        font-family: $font-family;
+      }
 
-    img {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 120px;
-      width: 100%;
-    }
+      img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 120px;
+        width: 100%;
+      }
 
-    .project-btns {
-      @include flex;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      opacity: 1;
-      width: 100%;
-    }
-
-    .project-btn {
-      opacity: 0;
-      @include transition-ease;
-      color: $color-link--hover;
-      color: $color-3;
-      text-decoration: none;
-
-      &:hover {
+      .project-links {
+        @include flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
         opacity: 1;
+        width: 100%;
+      }
+
+      .project-link {
+        opacity: 0;
+        @include transition-ease;
+        color: $color-link--hover;
+        color: $color-3;
+        text-decoration: none;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }

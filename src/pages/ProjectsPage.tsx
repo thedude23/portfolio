@@ -96,15 +96,15 @@ const ProjectsPage: React.FC = () => {
             <section className={styles.projects}>
               {data?.projects?.map((project: Project, index: number) => (
                 <div className={styles.project} key={index}>
+                  <h4 className={styles.projectName}>{project.name}</h4>
+                  <p className={styles.projectDescription}>{project.description}</p>
                   <img src={imageMap[project.image]} alt={project.name} />
-                  <h3>{project.name}</h3>
-                  <p>{project.description}</p>
-                  <div className={styles.links}>
+                  <div className={styles.projectLinks}>
                     {project.links.map((link: Link, linkIndex: number) => (
                       <a
                         key={linkIndex}
                         href={link.url}
-                        className={styles.link}
+                        className={styles.projectLink}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
