@@ -1,6 +1,6 @@
+import styles from './ContactPage.module.scss';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
-import styles from './ContactPage.module.scss';
 import { BsFillEnvelopeFill } from 'react-icons/bs';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { Helmet } from 'react-helmet';

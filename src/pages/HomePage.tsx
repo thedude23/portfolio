@@ -1,9 +1,9 @@
 import React from 'react';
+import styles from './HomePage.module.scss';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import MainContent from '../layout/MainContent';
 import PageTemplate from '../templates/PageTemplate';
-import styles from './HomePage.module.scss';
 import { Helmet } from 'react-helmet';
 
 const HomePage: React.FC = () => {
