@@ -28,7 +28,7 @@
         "Collaborate effectively with team members and stakeholders to ensure high-quality project outcomes",
         "Participate actively in project management tasks to ensure timely completion of projects"
       ],
-      "skills": ["Twig", "CSS", "JavaScript", "React.js", "Drupal"]
+      "skills": ["Twig", "CSS", "JavaScript", "React.js", "Drupal", "Docker"]
     },
     {
       "title": "Web Developer & Designer",
@@ -70,7 +70,7 @@
         "Provided practical technical support and troubleshooting, ensuring smooth running of web ad campaigns",
         "Utilized Adobe Photoshop to help design and enhance the appearance of ads"
       ],
-      "skills": ["CSS", "JavaScript", "jQuery", "HTML", "Adobe Photoshop"]
+      "skills": ["CSS", "PHP", "JavaScript", "jQuery", "HTML", "Adobe Photoshop"]
     }
   ]
 }
