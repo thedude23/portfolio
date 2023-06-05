@@ -25,7 +25,7 @@
       "location": "Remote",
       "tasks": [
         "Responsible for building and maintaining websites and web applications using Twig, (S)CSS, JavaScript, TypeScript, React.js, and Drupal",
-        "Collaborate effectively with team members and stakeholders to ensure high-quality project outcomes",
+        "Collaborate effectively with team members, designers, and stakeholders to ensure high-quality project outcomes",
         "Participate actively in project management tasks to ensure timely completion of projects"
       ],
       "skills": ["Twig", "CSS", "JavaScript", "React.js", "Drupal", "Docker"]
@@ -38,9 +38,10 @@
       "period": "Apr 2021 - Aug 2021 (5 mos)",
       "location": "Remote",
       "tasks": [
-        "Developed and maintained websites using CSS, PHP, and WordPress",
-        "Utilized Figma for designing visually appealing and user-friendly websites",
-        "Provided technical support to clients to maintain optimal website functionality"
+        "Actively engaged in the full development cycle, from ideation and design through to development, testing, deployment, and review",
+        "Developed and maintained user-centric websites using CSS, PHP, and WordPress, ensuring responsiveness and compatibility across devices",
+        "Leveraged Figma to design aesthetically pleasing and user-friendly interfaces, enhancing user experience and engagement",
+        "Provided technical support to clients, troubleshooting and resolving issues to maintain optimal website functionality and user satisfaction"
       ],
       "skills": ["Technical Support", "CSS", "PHP", "WordPress", "Figma"]
     },
