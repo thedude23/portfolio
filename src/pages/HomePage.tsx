@@ -29,7 +29,7 @@ const HomePage: React.FC = () => {
                 <span>Gamer. </span>
                 <span>Tech Enthusiast. </span>
                 <span>Psychology Aficionado. </span>
-                <span>Vocal Critic of Productivity-obsessed culture. </span>
+                <span>Vocal Critic of Productivity-obsessed Culture. </span>
                 <span>Fellow Human. </span>
               </h2>
             </section>
