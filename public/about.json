@@ -1,6 +1,6 @@
 {
   "hardSkills": [
-    "Proficiency in HTML, (S)CSS, JavaScript (ES6+), React, and Typescript, as well as familiarity with Next.js",
+    "Proficiency in HTML, (S)CSS, JavaScript (ES6+), React, and Typescript, as well as decent experience with Next.js",
     "Experience in API integration, and proficiency with various development tools like npm, yarn, Webpack, Babel, and Git",
     "Strong understanding of front-end methodologies (BEM, SMACSS, Atomic design) and accessibility standards (WCAG)",
     "Expertise in optimizing speed (Lighthouse, PageSpeed Insights), SEO, and cross-browser and cross-device testing",
@@ -24,11 +24,11 @@
       "period": "Aug 2021 - Present",
       "location": "Remote",
       "tasks": [
-        "Responsible for building and maintaining websites and web applications using Twig, (S)CSS, JavaScript, TypeScript, React.js, and Drupal",
+        "Responsible for building and maintaining websites and web applications using Twig, (S)CSS, JavaScript, TypeScript, React.js, Next.js, and Drupal",
         "Collaborate effectively with team members, designers, and stakeholders to ensure high-quality project outcomes",
         "Participate actively in project management tasks to ensure timely completion of projects"
       ],
-      "skills": ["Twig", "CSS", "JavaScript", "TypeScript", "React.js", "Drupal", "Docker", "Webpack"]
+      "skills": ["Next.js", "React.js", "JavaScript", "TypeScript", "CSS", "Twig", "Drupal", "Docker", "Webpack"]
     },
     {
       "title": "Web Developer & Designer",
@@ -43,7 +43,7 @@
         "Leveraged Figma to design aesthetically pleasing and user-friendly interfaces, enhancing user experience and engagement",
         "Provided technical support to clients, troubleshooting and resolving issues to maintain optimal website functionality and user satisfaction"
       ],
-      "skills": ["Technical Support", "CSS", "PHP", "WordPress", "Figma"]
+      "skills": ["PHP", "WordPress", "Technical Support", "CSS", "Figma"]
     },
     {
       "title": "Wordpress Developer",
@@ -57,7 +57,7 @@
         "Utilized programming languages such as PHP, JavaScript, and libraries like Frontity (React.js for WP) for efficient web development",
         "Applied Adobe XD proficiency for designing engaging and user-friendly interfaces"
       ],
-      "skills": ["PHP", "JavaScript", "React.js", "WordPress", "Adobe XD"]
+      "skills": ["PHP", "WordPress", "JavaScript", "React.js", "Adobe XD"]
     },
     {
       "title": "Web Developer & Designer",
@@ -71,7 +71,7 @@
         "Provided practical technical support and troubleshooting, ensuring smooth running of web ad campaigns",
         "Utilized Adobe Photoshop to help design and enhance the appearance of ads"
       ],
-      "skills": ["CSS", "PHP", "JavaScript", "jQuery", "HTML", "Adobe Photoshop"]
+      "skills": ["HTML", "CSS", "JavaScript", "jQuery", "PHP", "Adobe Photoshop"]
     }
   ]
 }
