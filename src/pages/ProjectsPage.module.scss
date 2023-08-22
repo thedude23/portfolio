@@ -84,12 +84,13 @@
       .project-link {
         opacity: 0;
         @include transition-ease;
-        color: $color-link--hover;
-        color: $color-3;
         text-decoration: none;
+        color: $color-2;
+        font-size: $font-size-sm;
 
         &:hover {
           opacity: 1;
+          color: $color-link--hover;
         }
       }
     }
