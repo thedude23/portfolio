@@ -23,7 +23,7 @@ const HomePage: React.FC = () => {
                 <span>T</span>im <span>K</span>oprivnik
               </h1>
               <h2 className={styles.heroSubtitle}>
-                <span>Developer. </span>
+                <span>Web Developer. </span>
                 <span>Thinker. </span>
                 <span>Sportsman. </span>
                 <span>Gamer. </span>
