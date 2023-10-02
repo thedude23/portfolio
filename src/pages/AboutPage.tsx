@@ -61,8 +61,7 @@ const AboutPage: React.FC = () => {
                 <br />
                 <br /> I live by the principle of Newton's 3rd law: reciprocity. The respect, kindness, and fairness I
                 receive inform how I respond. I strive to uphold fairness and empathy in my interactions and look
-                forward to meeting individuals who share the same values. Just like life, I believe that what you give
-                is what you get.
+                forward to meeting individuals who share the same values. In other words, I give what I get.
               </p>
               <br />
 
