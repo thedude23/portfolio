@@ -46,4 +46,5 @@ This project is open-source and available under the MIT License.
 Tim Koprivnik - t.koprivnikl@gmail.com
 
 ## Website
+
 https://tim-koprivnik.netlify.app/
