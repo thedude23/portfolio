@@ -3,7 +3,7 @@ import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import MainContent from '../layout/MainContent';
 import PageTemplate from '../templates/PageTemplate';
-import useFetchData from '../hooks/useFetch';
+import useFetch from '../hooks/useFetch';
 import { Helmet } from 'react-helmet';
 import imageOfMe from '../assets/me-2023.jpg';
 
@@ -23,7 +23,7 @@ interface AboutData {
 }
 
 const AboutPage: React.FC = () => {
-  const [data, isLoading, error] = useFetchData<AboutData>('../../about.json');
+  const [data, isLoading, error] = useFetch<AboutData>('../../about.json');
 
   if (isLoading) {
     return <p className={styles.apiText}>Loading...</p>;

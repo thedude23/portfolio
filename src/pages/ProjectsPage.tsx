@@ -6,7 +6,7 @@ import PageTemplate from '../templates/PageTemplate';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Helmet } from 'react-helmet';
-import useFetchData from '../hooks/useFetch';
+import useFetch from '../hooks/useFetch';
 import fastReactPizzaImg from '../assets/fast-react-pizza.png';
 import natoursImg from '../assets/natours.png';
 import nexterImg from '../assets/nexter.png';
@@ -63,7 +63,7 @@ const imageMap: { [key: string]: string } = {
 };
 
 const ProjectsPage: React.FC = () => {
-  const [data, isLoading, error] = useFetchData<ProjectsData>('../../projects.json');
+  const [data, isLoading, error] = useFetch<ProjectsData>('../../projects.json');
 
   if (isLoading) {
     return <p className={styles.apiText}>Loading...</p>;
