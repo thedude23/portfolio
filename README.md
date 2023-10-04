@@ -1,6 +1,6 @@
 # My Portfolio
 
-This portfolio website was created using [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/), and [Vite](https://vitejs.dev/), featuring a sleek, responsive design to showcase projects and skills.
+This portfolio website was created using [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/), [Vite](https://vitejs.dev/), and [Netlify](https://www.netlify.com/), featuring a sleek, responsive design to showcase projects and skills.
 
 ## Features
 
@@ -34,6 +34,7 @@ This command will create a dist directory with a production build of your app.
 ## Technologies Used
 
 - React
+- Typescript
 - Vite
 - CSS Modules
 
