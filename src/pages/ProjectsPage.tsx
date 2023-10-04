@@ -6,7 +6,7 @@ import PageTemplate from '../templates/PageTemplate';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Helmet } from 'react-helmet';
-import useFetchData from '../hooks/useFetchData';
+import useFetchData from '../hooks/useFetch';
 import memeGeneratorImg from '../assets/memegenerator.jpg';
 import natoursImg from '../assets/natours.png';
 import nexterImg from '../assets/nexter.png';
