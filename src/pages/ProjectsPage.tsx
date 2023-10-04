@@ -7,7 +7,7 @@ import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Helmet } from 'react-helmet';
 import useFetchData from '../hooks/useFetchData';
-import memeGeneratorImg from '../assets/memegenerator.jpg';
+import fastReactPizzaImg from '../assets/fast-react-pizza.png';
 import natoursImg from '../assets/natours.png';
 import nexterImg from '../assets/nexter.png';
 import soundwaveImg from '../assets/soundwave.jpg';
@@ -43,7 +43,7 @@ interface ProjectsData {
 }
 
 const imageMap: { [key: string]: string } = {
-  'memegenerator.jpg': memeGeneratorImg,
+  'fast-react-pizza.png': fastReactPizzaImg,
   'natours.png': natoursImg,
   'nexter.png': nexterImg,
   'soundwave.jpg': soundwaveImg,
