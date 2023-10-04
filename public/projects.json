@@ -18,18 +18,18 @@
       ]
     },
     {
-      "name": "Meme Generator",
-      "image": "memegenerator.jpg",
-      "description": "Meme Generator app in React",
+      "name": "Fast React Pizza",
+      "image": "fast-react-pizza.png",
+      "description": "Food ordering app in React",
       "links": [
         {
           "type": "View",
-          "url": "https://ktix-meme-generator.netlify.app/",
+          "url": "https://fast-react-pizza-p7jm3f142-thedude23.vercel.app/",
           "icon": "AiFillEye"
         },
         {
           "type": "Repo",
-          "url": "https://github.com/tim-koprivnik/memegenerator",
+          "url": "https://github.com/tim-koprivnik/fast-react-pizza",
           "icon": "AiFillGithub"
         }
       ]
@@ -58,7 +58,7 @@
       "links": [
         {
           "type": "View",
-          "url": "https://ktix-piggame.netlify.app/",
+          "url": "https://piggame-three.vercel.app/",
           "icon": "AiFillEye"
         },
         {
@@ -177,7 +177,7 @@
       "links": [
         {
           "type": "View",
-          "url": "https://ktix-trillo.netlify.app/",
+          "url": "https://trillo-pearl-gamma.vercel.app/",
           "icon": "AiFillEye"
         },
         {
@@ -245,7 +245,7 @@
       "links": [
         {
           "type": "View",
-          "url": "https://ktix-netflix.netlify.app/",
+          "url": "https://netflix-clone-sigma-red.vercel.app/",
           "icon": "AiFillEye"
         },
         {
@@ -261,11 +261,6 @@
       "description": "Design in Figma",
       "links": [
         {
-          "type": "View",
-          "url": "",
-          "icon": "AiFillEye"
-        },
-        {
           "type": "Repo",
           "url": "https://github.com/tim-koprivnik/covid",
           "icon": "AiFillGithub"
@@ -277,11 +272,6 @@
       "image": "alivio.png",
       "description": "Design in Figma",
       "links": [
-        {
-          "type": "View",
-          "url": "",
-          "icon": "AiFillEye"
-        },
         {
           "type": "Repo",
           "url": "https://github.com/tim-koprivnik/alivio",
