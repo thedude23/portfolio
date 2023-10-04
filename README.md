@@ -35,7 +35,6 @@ This command will create a dist directory with a production build of your app.
 
 - React
 - Typescript
-- Vite
 - CSS Modules
 
 ## License
