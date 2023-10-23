@@ -24,12 +24,12 @@ const HomePage: React.FC = () => {
               </h1>
               <h2 className={styles.heroSubtitle}>
                 <span>Web Developer. </span>
-                <span>Thinker. </span>
+                <span>Philosopher. </span>
                 <span>Sportsman. </span>
                 <span>Gamer. </span>
                 <span>Tech Enthusiast. </span>
                 <span>Psychology Aficionado. </span>
-                <span>Vocal Critic of Productivity-obsessed Culture. </span>
+                <span>Vocal Critic of Work-obsessed Culture. </span>
                 <span>Fellow Human. </span>
               </h2>
             </section>
