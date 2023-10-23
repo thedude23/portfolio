@@ -24,6 +24,7 @@ import crispStudioImg from '../assets/crisp-studio.png';
 import covidImg from '../assets/covid-19.jpg';
 import portfolioImg from '../assets/portfolio.png';
 import forkifyImg from '../assets/forkify.png';
+import tmdbImg from '../assets/tmdb.png';
 
 interface Link {
   type: string;
@@ -60,6 +61,7 @@ const imageMap: { [key: string]: string } = {
   'covid-19.jpg': covidImg,
   'portfolio.png': portfolioImg,
   'forkify.png': forkifyImg,
+  'tmdb.png': tmdbImg,
 };
 
 const ProjectsPage: React.FC = () => {

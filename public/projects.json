@@ -1,6 +1,23 @@
 {
   "projects": [
     {
+      "name": "TMDB",
+      "image": "tmdb.png",
+      "description": "Movie database app in Next.js",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://tmdb-fcjzrpn6x-thedude23.vercel.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Repo",
+          "url": "https://github.com/tim-koprivnik/TMDB",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
       "name": "Portfolio",
       "image": "portfolio.png",
       "description": "Portfolio website in React",
