@@ -27,7 +27,7 @@
       "period": "Aug 2021 - Present",
       "location": "Remote",
       "tasks": [
-        "Responsible for building and maintaining websites and web applications using Twig, (S)CSS, JavaScript, TypeScript, React.js, Next.js, and Drupal",
+        "Responsible for building and maintaining websites and web applications using Drupal, Twig, (S)CSS, JavaScript, TypeScript, React, and Next.js",
         "Collaborate effectively with team members, designers, and clients to ensure high-quality project outcomes",
         "Participate actively in project management tasks to ensure timely completion of projects"
       ],
@@ -46,10 +46,10 @@
         "Leveraged Figma to design aesthetically pleasing and user-friendly interfaces, enhancing user experience and engagement",
         "Provided technical support to clients, troubleshooting and resolving issues to ensure optimal website functionality and user satisfaction"
       ],
-      "skills": ["PHP", "WordPress", "Technical Support", "CSS", "Figma"]
+      "skills": ["PHP", "WordPress", "CSS", "Figma", "Technical Support"]
     },
     {
-      "title": "Wordpress Developer",
+      "title": "WordPress Developer",
       "company": "citiesapps",
       "companyLink": "https://about.citiesapps.com/",
       "type": "Full-time",
