@@ -26,7 +26,7 @@ const Header: React.FC<Props> = () => {
           </li>
           <li className={isOpen ? `${styles.menuNavItem} ${styles.open}` : styles.menuNavItem}>
             <NavLink to="/about" className={({ isActive }) => `${styles.menuNavLink} ${isActive ? styles.active : ''}`}>
-              About Me
+              About
             </NavLink>
           </li>
           <li className={isOpen ? `${styles.menuNavItem} ${styles.open}` : styles.menuNavItem}>
@@ -34,7 +34,7 @@ const Header: React.FC<Props> = () => {
               to="/projects"
               className={({ isActive }) => `${styles.menuNavLink} ${isActive ? styles.active : ''}`}
             >
-              My Projects
+              Projects
             </NavLink>
           </li>
           <li className={isOpen ? `${styles.menuNavItem} ${styles.open}` : styles.menuNavItem}>
@@ -42,7 +42,7 @@ const Header: React.FC<Props> = () => {
               to="/contact"
               className={({ isActive }) => `${styles.menuNavLink} ${isActive ? styles.active : ''}`}
             >
-              Contact Me
+              Contact
             </NavLink>
           </li>
         </ul>

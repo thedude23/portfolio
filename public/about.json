@@ -28,10 +28,10 @@
       "location": "Remote",
       "tasks": [
         "Responsible for building and maintaining websites and web applications using Twig, (S)CSS, JavaScript, TypeScript, React.js, Next.js, and Drupal",
-        "Collaborate effectively with team members, designers, and stakeholders to ensure high-quality project outcomes",
+        "Collaborate effectively with team members, designers, and clients to ensure high-quality project outcomes",
         "Participate actively in project management tasks to ensure timely completion of projects"
       ],
-      "skills": ["Next.js", "React.js", "JavaScript", "TypeScript", "CSS", "Twig", "Drupal", "Docker", "Webpack"]
+      "skills": ["React", "Next.js", "JavaScript", "TypeScript", "CSS", "Twig", "Drupal", "Docker", "Webpack"]
     },
     {
       "title": "Web Developer & Designer",
@@ -44,7 +44,7 @@
         "Actively engaged in the full development cycle, from ideation and design through to development, testing, deployment, and review",
         "Developed and maintained user-centric websites using CSS, PHP, and WordPress, ensuring responsiveness and compatibility across devices",
         "Leveraged Figma to design aesthetically pleasing and user-friendly interfaces, enhancing user experience and engagement",
-        "Provided technical support to clients, troubleshooting and resolving issues to maintain optimal website functionality and user satisfaction"
+        "Provided technical support to clients, troubleshooting and resolving issues to ensure optimal website functionality and user satisfaction"
       ],
       "skills": ["PHP", "WordPress", "Technical Support", "CSS", "Figma"]
     },
