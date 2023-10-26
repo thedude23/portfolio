@@ -1,22 +1,22 @@
 {
   "hardSkills": [
-    "Demonstrable experience in creating modern websites and web applications using a stack that includes HTML, (S)CSS, JavaScript (ES6+), TypeScript, React, and Next.js",
-    "A strong understanding of front-end methodologies like BEM, SMACSS, and Atomic Design, along with a commitment to Web Content Accessibility Guidelines (WCAG)",
-    "Hands-on experience with JavaScript component libraries and extensive practice in crafting responsive user interfaces compatible with a variety of devices and browsers",
-    "Proficient in using development tools including npm, Yarn, Webpack, Docker, as well as version control systems like Git",
-    "A strong focus on web performance, regularly achieving high scores in Lighthouse and Google PageSpeed Insights to optimize speed and user experience",
-    "Some experience with back-end technologies such as MySQL, Supabase, Firebase, and PHP (specifically with the Laravel framework), coupled with substantial expertise in Content Management Systems like Drupal and WordPress",
-    "Ability to work closely with UX designers, graphic designers, and server-side developers, demonstrating a solid understanding of UI/UX principles and design tools like Adobe XD, Figma, and Photoshop",
-    "Well-versed in Agile Scrum methodology, comfortable using project management tools and effective at team communication",
-    "Awareness of Search Engine Optimization (SEO) best practices and their application in projects"
+    "Extensive experience in creating modern websites and web applications with HTML, (S)CSS, JavaScript (ES6+), TypeScript, React, and Next.js",
+    "Strong understanding of React library best practices and conventions",
+    "Strong understanding of front-end methodologies (BEM, SMACSS, Atomic design) and accessibility standards (WCAG)",
+    "Proficiency in using development tools including npm, yarn, gulp, Webpack, Docker, as well as version control systems like Git",
+    "Extensive experience in working with APIs, including REST and GraphQL",
+    "Extensive experience in optimizing speed (Lighthouse, PageSpeed Insights), SEO, and cross-browser and cross-device testing",
+    "Experience with back-end technologies such as MySQL, Supabase, Firebase, and PHP (specifically with the Laravel framework), coupled with substantial expertise in Content Management Systems like Drupal and WordPress",
+    "Experience with design tools like Adobe XD, Figma, Photoshop, and a strong understanding of UI/UX principles",
+    "Competence in Agile scrum methodology, project management tools, and team communication platforms"
   ],
   "softSkills": [
-    "Fluent in English with advanced proficiency in written and verbal communication",
-    "Consistently reliable, dedicated, and self-motivated, with a track record to prove it",
-    "Inherent curiosity (about emerging technologies) and a constant desire to learn and adapt",
-    "Methodical and organized in approach, accompanied by an unyielding desire for personal and professional growth",
+    "Fluency in English",
+    "Consistent reliability, dedication, and self-motivation",
+    "Inherent curiosity with a constant desire to learn and improve",
+    "Methodical and organized in approach to work, with a strong attention to detail",
     "Possessing an open-minded and fair attitude, underscored by a commitment to kindness in interpersonal interactions",
-    "Natural ability to understand and relate to diverse human behavior"
+    "Natural ability to understand and relate to diverse human behavior and perspectives"
   ],
   "jobs": [
     {
