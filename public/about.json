@@ -4,7 +4,7 @@
     "Strong understanding of React library best practices and conventions",
     "Strong understanding of front-end methodologies (BEM, SMACSS, Atomic design) and accessibility standards (WCAG)",
     "Proficiency in using development tools including npm, yarn, gulp, Webpack, Docker, as well as version control systems like Git",
-    "Extensive experience in working with APIs, including REST and GraphQL (+ Apollo)",
+    "Extensive experience in working with APIs, including REST and GraphQL (w/ Apollo)",
     "Extensive experience in optimizing speed (Lighthouse, PageSpeed Insights), SEO, and cross-browser and cross-device testing",
     "Experience with back-end technologies such as (My)SQL, Supabase, Firebase, PHP, and Python, coupled with substantial expertise in CMS platforms like Drupal and WordPress",
     "Experience with design tools like Adobe XD, Figma, Photoshop, and a strong understanding of UI/UX principles",
@@ -41,7 +41,7 @@
         "Drupal",
         "Docker",
         "Webpack",
-        "GraphQL + Apollo"
+        "GraphQL"
       ]
     },
     {
@@ -57,7 +57,7 @@
         "Leveraged Figma to design aesthetically pleasing and user-friendly interfaces, enhancing user experience and engagement",
         "Provided technical support to clients, troubleshooting and resolving issues to ensure optimal website functionality and user satisfaction"
       ],
-      "skills": ["PHP", "WordPress", "CSS", "Figma", "Technical Support"]
+      "skills": ["PHP", "WordPress", "MySQL", "CSS", "Figma", "Technical Support"]
     },
     {
       "title": "WordPress Developer",
@@ -71,7 +71,7 @@
         "Utilized programming languages such as PHP, JavaScript, and libraries like Frontity (React for WP) for efficient web development",
         "Applied Adobe XD proficiency for designing engaging and user-friendly interfaces"
       ],
-      "skills": ["PHP", "WordPress", "JavaScript", "Frontity (React)", "Adobe XD"]
+      "skills": ["PHP", "WordPress", "MySQL", "JavaScript", "Frontity (React)", "Adobe XD"]
     },
     {
       "title": "Web Developer & Designer",
