@@ -4,9 +4,9 @@
     "Strong understanding of React library best practices and conventions",
     "Strong understanding of front-end methodologies (BEM, SMACSS, Atomic design) and accessibility standards (WCAG)",
     "Proficiency in using development tools including npm, yarn, gulp, Webpack, Docker, as well as version control systems like Git",
-    "Extensive experience in working with APIs, including REST and GraphQL",
+    "Extensive experience in working with APIs, including REST and GraphQL (+ Apollo)",
     "Extensive experience in optimizing speed (Lighthouse, PageSpeed Insights), SEO, and cross-browser and cross-device testing",
-    "Experience with back-end technologies such as MySQL, Supabase, Firebase, and PHP (specifically with the Laravel framework), coupled with substantial expertise in CMS platforms like Drupal and WordPress",
+    "Experience with back-end technologies such as (My)SQL, Supabase, Firebase, PHP, and Python, coupled with substantial expertise in CMS platforms like Drupal and WordPress",
     "Experience with design tools like Adobe XD, Figma, Photoshop, and a strong understanding of UI/UX principles",
     "Competence in Agile scrum methodology, project management tools, and team communication platforms"
   ],
@@ -31,7 +31,18 @@
         "Collaborate effectively with team members, designers, and clients to ensure high-quality project outcomes",
         "Participate actively in project management tasks to ensure timely completion of projects"
       ],
-      "skills": ["React", "Next.js", "JavaScript", "TypeScript", "CSS", "Twig", "Drupal", "Docker", "Webpack"]
+      "skills": [
+        "React",
+        "Next.js",
+        "JavaScript",
+        "TypeScript",
+        "(S)CSS",
+        "Twig",
+        "Drupal",
+        "Docker",
+        "Webpack",
+        "GraphQL + Apollo"
+      ]
     },
     {
       "title": "Web Developer & Designer",
@@ -60,7 +71,7 @@
         "Utilized programming languages such as PHP, JavaScript, and libraries like Frontity (React for WP) for efficient web development",
         "Applied Adobe XD proficiency for designing engaging and user-friendly interfaces"
       ],
-      "skills": ["PHP", "WordPress", "JavaScript", "Frontity", "Adobe XD"]
+      "skills": ["PHP", "WordPress", "JavaScript", "Frontity (React)", "Adobe XD"]
     },
     {
       "title": "Web Developer & Designer",
