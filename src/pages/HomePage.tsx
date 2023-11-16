@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
           <MainContent className={styles.homePage}>
             <section className={styles.hero}>
               <h3 className={styles.heroIntro}>
-                Hello, <input autoFocus type="text" placeholder="<INSERT YOUR NAME>"></input> !
+                Hello, <input autoFocus type="text" placeholder="INSERT YOUR NAME"></input> !
               </h3>
               <h1 className={styles.heroTitle}>
                 <div className={styles.heroIntro}>My name is</div>
