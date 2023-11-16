@@ -3,7 +3,7 @@
     {
       "name": "TMDB",
       "image": "tmdb.png",
-      "description": "Movie database app in Next.js",
+      "description": "Movie database app",
       "links": [
         {
           "type": "View",
@@ -18,26 +18,9 @@
       ]
     },
     {
-      "name": "Portfolio",
-      "image": "portfolio.png",
-      "description": "Portfolio website in React",
-      "links": [
-        {
-          "type": "View",
-          "url": "https://tim-koprivnik.netlify.app/",
-          "icon": "AiFillEye"
-        },
-        {
-          "type": "Repo",
-          "url": "https://github.com/tim-koprivnik/portfolio",
-          "icon": "AiFillGithub"
-        }
-      ]
-    },
-    {
       "name": "Fast React Pizza",
       "image": "fast-react-pizza.png",
-      "description": "Food ordering app in React",
+      "description": "Food ordering app",
       "links": [
         {
           "type": "View",
@@ -52,9 +35,26 @@
       ]
     },
     {
+      "name": "Portfolio",
+      "image": "portfolio.png",
+      "description": "Portfolio website",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://tim-koprivnik.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Repo",
+          "url": "https://github.com/tim-koprivnik/portfolio",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
       "name": "Forkify",
       "image": "forkify.png",
-      "description": "Food recipe app in Javascript",
+      "description": "Food recipe app",
       "links": [
         {
           "type": "View",
@@ -69,26 +69,9 @@
       ]
     },
     {
-      "name": "PigGame",
-      "image": "piggame.jpg",
-      "description": "Pig game in Javascript",
-      "links": [
-        {
-          "type": "View",
-          "url": "https://piggame-three.vercel.app/",
-          "icon": "AiFillEye"
-        },
-        {
-          "type": "Repo",
-          "url": "https://github.com/tim-koprivnik/piggame",
-          "icon": "AiFillGithub"
-        }
-      ]
-    },
-    {
       "name": "Budgety",
       "image": "budgety.png",
-      "description": "Cost/expenses calculator app in Javascript",
+      "description": "Cost/Expenses calculator app",
       "links": [
         {
           "type": "View",
@@ -103,9 +86,26 @@
       ]
     },
     {
+      "name": "PigGame",
+      "image": "piggame.jpg",
+      "description": "Pig game",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://piggame-three.vercel.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Repo",
+          "url": "https://github.com/tim-koprivnik/piggame",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
       "name": "Obnova doma",
       "image": "subsidium.jpg",
-      "description": "Website in WordPress",
+      "description": "Website",
       "links": [
         {
           "type": "View",
@@ -122,7 +122,7 @@
     {
       "name": "Something Different",
       "image": "something-different.png",
-      "description": "Recipe blog in WordPress",
+      "description": "Website / Blog",
       "links": [
         {
           "type": "View",
@@ -139,7 +139,7 @@
     {
       "name": "Ogani",
       "image": "ogani.jpg",
-      "description": "Website template in HTML & CSS",
+      "description": "Website template",
       "links": [
         {
           "type": "View",
@@ -156,7 +156,7 @@
     {
       "name": "Natours",
       "image": "natours.png",
-      "description": "Website template in HTML & CSS",
+      "description": "Website template",
       "links": [
         {
           "type": "View",
@@ -173,7 +173,7 @@
     {
       "name": "Nexter",
       "image": "nexter.png",
-      "description": "Website template in HTML & CSS",
+      "description": "Website template",
       "links": [
         {
           "type": "View",
@@ -190,7 +190,7 @@
     {
       "name": "Trillo",
       "image": "trillo.png",
-      "description": "Website template in HTML & CSS",
+      "description": "Website template",
       "links": [
         {
           "type": "View",
@@ -207,7 +207,7 @@
     {
       "name": "Crisp Studio",
       "image": "crisp-studio.png",
-      "description": "Website template in HTML & CSS",
+      "description": "Website template",
       "links": [
         {
           "type": "View",
@@ -222,26 +222,9 @@
       ]
     },
     {
-      "name": "Soundwave",
-      "image": "soundwave.jpg",
-      "description": "Website template in HTML & CSS; design in Figma",
-      "links": [
-        {
-          "type": "View",
-          "url": "https://ktix-soundwave.netlify.app/",
-          "icon": "AiFillEye"
-        },
-        {
-          "type": "Repo",
-          "url": "https://github.com/tim-koprivnik/soundwave",
-          "icon": "AiFillGithub"
-        }
-      ]
-    },
-    {
       "name": "Allbirds",
       "image": "allbirds.png",
-      "description": "Shopify Website template in HTML & CSS",
+      "description": "Website template",
       "links": [
         {
           "type": "View",
@@ -258,7 +241,7 @@
     {
       "name": "Netflix clone",
       "image": "netflixclone.jpg",
-      "description": "Website template in HTML & CSS",
+      "description": "Website template",
       "links": [
         {
           "type": "View",
@@ -273,9 +256,26 @@
       ]
     },
     {
+      "name": "Soundwave",
+      "image": "soundwave.jpg",
+      "description": "Website template & Design",
+      "links": [
+        {
+          "type": "View",
+          "url": "https://ktix-soundwave.netlify.app/",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Repo",
+          "url": "https://github.com/tim-koprivnik/soundwave",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
       "name": "Covid-19",
       "image": "covid-19.jpg",
-      "description": "Design in Figma",
+      "description": "Design",
       "links": [
         {
           "type": "Repo",
@@ -287,7 +287,7 @@
     {
       "name": "Alivio",
       "image": "alivio.png",
-      "description": "Design in Figma",
+      "description": "Design",
       "links": [
         {
           "type": "Repo",

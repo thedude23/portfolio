@@ -86,10 +86,15 @@ const ProjectsPage: React.FC = () => {
         mainContent={
           <MainContent className={styles.projectsPage}>
             <h1 className={styles.pageTitle}>Projects</h1>
-            <h2 className={styles.sectionTitle}>Some of my personal projects</h2>
+            <h2 className={styles.sectionTitle}>Personal projects</h2>
             <p>
               For more, check{' '}
-              <a href="https://github.com/tim-koprivnik" target="_blank" rel="noreferrer noopener">
+              <a
+                className={styles.portfolioLink}
+                href="https://github.com/tim-koprivnik"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 Github
               </a>
               .

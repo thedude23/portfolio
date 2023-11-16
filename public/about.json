@@ -1,12 +1,12 @@
 {
   "hardSkills": [
-    "Extensive experience in creating modern websites and web applications with HTML, (S)CSS, JavaScript (ES6+), TypeScript, React, and Next.js",
+    "Extensive experience in creating modern websites and web applications with HTML, CSS, Sass, JavaScript, TypeScript, React, and Next.js",
     "Strong understanding of React library best practices and conventions",
     "Strong understanding of front-end methodologies (BEM, SMACSS, Atomic design) and accessibility standards (WCAG)",
     "Proficiency in using development tools including npm, yarn, gulp, Webpack, Docker, as well as version control systems like Git",
     "Extensive experience in working with APIs, including REST and GraphQL (w/ Apollo)",
     "Extensive experience in optimizing speed (Lighthouse, PageSpeed Insights), SEO, and cross-browser and cross-device testing",
-    "Experience with back-end technologies such as (My)SQL, Supabase, Firebase, PHP, and Python, coupled with substantial expertise in CMS platforms like Drupal and WordPress",
+    "Experience with back-end technologies such as (My)SQL, Supabase, Firebase, PHP, and Python (Flask), coupled with substantial expertise in CMS platforms like Drupal and WordPress",
     "Experience with design tools like Adobe XD, Figma, Photoshop, and a strong understanding of UI/UX principles",
     "Competence in Agile scrum methodology, project management tools, and team communication platforms"
   ],
@@ -25,13 +25,24 @@
       "companyLink": "https://www.agiledrop.com/",
       "type": "Full-time",
       "period": "Aug 2021 - Present",
-      "location": "Maribor, Slovenia (remote)",
+      "location": "Maribor, Slovenia (Remote)",
       "tasks": [
-        "Developing and maintaining websites and web applications using JavaScript, TypeScript, React, Next.js, Drupal, (S)CSS, Docker, etc.",
+        "Developing and maintaining websites and web applications",
         "Collaborating effectively with other developers, project managers, designers, and clients to ensure high-quality project outcomes",
         "Participating actively in time estimations to ensure timely completion of projects"
       ],
-      "skills": ["React", "Next.js", "JavaScript", "TypeScript", "(S)CSS", "Drupal", "Docker", "Webpack", "GraphQL"]
+      "skills": [
+        "React",
+        "Next.js",
+        "JavaScript",
+        "TypeScript",
+        "CSS",
+        "Sass",
+        "Drupal",
+        "Docker",
+        "Webpack",
+        "GraphQL"
+      ]
     },
     {
       "title": "Web Developer & Designer",
@@ -39,9 +50,9 @@
       "companyLink": "https://interstellarsupport.com/",
       "type": "Freelance",
       "period": "Apr 2021 - Aug 2021 (5 mos)",
-      "location": "Maribor, Slovenia (remote)",
+      "location": "United States (Remote)",
       "tasks": [
-        "Designed, developed, and maintained websites for clients from various sectors using Figma, WordPress, PHP, MySQL, CSS, and Javascript",
+        "Designed, developed, and maintained websites for clients from various sectors",
         "Actively engaged in the full development cycle, from ideation and design through to development, testing, deployment, and review",
         "Provided technical support to clients, troubleshooting and resolving issues to ensure optimal website functionality and user satisfaction"
       ],
@@ -53,12 +64,12 @@
       "companyLink": "https://about.citiesapps.com/",
       "type": "Full-time",
       "period": "Nov 2020 - Apr 2021 (6 mos)",
-      "location": "Graz, Austria (remote)",
+      "location": "Graz, Austria (Remote)",
       "tasks": [
-        "Designed, developed, and maintained various WordPress websites for primary schools in Austria using AdobeXD, WordPress, PHP, MySQL, CSS, JavaScript, and Frontity (React for WP) ",
+        "Designed, developed, and maintained various WordPress websites for primary schools in Austria",
         "Developed custom plugin responsible for connecting to the internal app"
       ],
-      "skills": ["PHP", "WordPress", "MySQL", "JavaScript", "Frontity (React)", "Adobe XD"]
+      "skills": ["PHP", "WordPress", "MySQL", "JavaScript", "CSS", "Sass", "Frontity/React", "Adobe XD"]
     },
     {
       "title": "Web Developer & Designer",
@@ -66,9 +77,9 @@
       "companyLink": "https://adverta.si/",
       "type": "Contract",
       "period": "Aug 2019 - Oct 2020 (1 yr 3 mos)",
-      "location": "Maribor, Slovenia (hybrid)",
+      "location": "Maribor, Slovenia (Hybrid)",
       "tasks": [
-        "Designed and developed web ads for different campaigns using Photoshop, HTML, CSS, JavaScript, and jQuery",
+        "Designed and developed web ads for different campaigns",
         "Occasionally worked on adding new features to internal CMS using PHP"
       ],
       "skills": ["HTML", "CSS", "JavaScript", "jQuery", "PHP", "Adobe Photoshop"]

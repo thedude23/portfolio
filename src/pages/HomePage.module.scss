@@ -51,6 +51,12 @@
       }
     }
 
+    .hero-intro {
+      font-size: $font-size-sm;
+      color: $color-3;
+      text-transform: none;
+    }
+
     h2,
     &-subtitle {
       color: $color-text;

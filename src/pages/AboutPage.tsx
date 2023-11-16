@@ -5,7 +5,7 @@ import MainContent from '../layout/MainContent';
 import PageTemplate from '../templates/PageTemplate';
 import useFetch from '../hooks/useFetch';
 import { Helmet } from 'react-helmet';
-import imageOfMe from '../assets/me-2023.jpg';
+import imageOfMe from '../assets/me_no_bg.png';
 
 interface AboutData {
   hardSkills: string[];
@@ -22,6 +22,87 @@ interface AboutData {
   }[];
 }
 
+type Keywords = string[];
+
+const highlightKeywords = (text: string, keywords: Keywords) => {
+  const regex = new RegExp(`\\b(${keywords.join('|')})\\b`, 'gi');
+  return text.replace(regex, (match) => `<span class="highlight">${match}</span>`);
+};
+
+// const highlightKeywords = (text: string, keywords: Keywords) => {
+//   // Escape special characters and replace spaces with \s+ to match one or more spaces
+//   const escapedKeywords = keywords.map((keyword) =>
+//     keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+'),
+//   );
+//   const regex = new RegExp(`(${escapedKeywords.join('|')})`, 'gi');
+//   return text.replace(regex, (match) => `<span class="highlight">${match}</span>`);
+// };
+
+// const escapeRegExp = (string: string) => {
+//   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+// };
+
+// const highlightKeywords = (text: string, keywords: Keywords) => {
+//   // Escape special regex characters and join the keywords
+//   const regexPattern = keywords.map(escapeRegExp).join('|');
+//   const regex = new RegExp(`(${regexPattern})`, 'gi');
+//   return text.replace(regex, (match) => `<span class="highlight">${match}</span>`);
+// };
+
+const keywords = [
+  'HTML',
+  'Sass',
+  'CSS',
+  'JavaScript',
+  'jQuery',
+  'TypeScript',
+  'React library',
+  'React',
+  'Frontity',
+  'Next.js',
+  'BEM',
+  'SMACSS',
+  'Atomic design',
+  'WCAG',
+  'npm',
+  'yarn',
+  'gulp',
+  'Webpack',
+  'Docker',
+  'Git',
+  'REST',
+  'GraphQL',
+  'Apollo',
+  'Lighthouse',
+  'PageSpeed Insights',
+  'SQL',
+  'MySQL',
+  'Supabase',
+  'Firebase',
+  'PHP',
+  'Python',
+  'Flask',
+  'Drupal',
+  'WordPress',
+  'Adobe XD',
+  'Figma',
+  'Adobe',
+  'Photoshop',
+  'agile scrum',
+  'English',
+  'reliability',
+  'dedication',
+  'self-motivation',
+  'curiosity',
+  'desire to learn and improve',
+  'methodical',
+  'organized',
+  'fair',
+  'kindness',
+  'understand',
+  'Technical support',
+];
+
 const AboutPage: React.FC = () => {
   const [data, isLoading, error] = useFetch<AboutData>('../../about.json');
 
@@ -32,6 +113,10 @@ const AboutPage: React.FC = () => {
   if (error) {
     return <p className={styles.apiText}>Error: {error.message}</p>;
   }
+
+  const createSpecialMarkup = (text: string) => {
+    return { __html: highlightKeywords(text, keywords) };
+  };
 
   return (
     <>
@@ -47,35 +132,40 @@ const AboutPage: React.FC = () => {
             <h2 className={styles.sectionTitle}>About me</h2>
 
             <section className={styles.about}>
-              <img src={imageOfMe} alt="Me" />
+              <img src={imageOfMe} alt="Me" className={styles.imageOfMe} />
               <p>
-                I'm an open-minded individual with a penchant for simplicity and peace. I place great value on living an
-                intentional life, free from unnecessary stress, and strive to cultivate a mindset of continuous learning
-                and personal growth. My interests span a broad spectrum, from gaming, diving into a good book, listening
-                to chill music, indulging in insightful docuseries, engaging in various sports, exploring new places,
-                and encountering diverse people. Music serves as my soul's sanctuary and the sense of personal growth
-                fuels my zest for life.
-                <br />
-                <br /> In an ideal world, I envision a society where the pursuit of money and materialistic possessions
-                is not the ultimate ambition, and where exploitation does not mar human relations. I dream of a world
-                that values empathy, kindness, and fairness over all else.
-                <br />
-                <br /> I live by the principle of Newton's 3rd law: reciprocity. The respect, kindness, and fairness I
-                receive inform how I respond. I strive to uphold fairness and empathy in my interactions and look
-                forward to meeting individuals who share the same values. In other words, I give what I get.
+                I'm an <span>open-minded</span> individual with a penchant for <span>simplicity</span> and
+                <span> peace</span>. I place great value on living an <span>intentional</span> life guided by
+                <span> Buddhist</span> principles, and strive to cultivate a mindset of
+                <span> continuous learning</span> and <span>personal growth</span>. My interests span a broad spectrum,
+                from <span> gaming</span>, diving into a good <span>book</span>, listening to chill <span>music</span>,
+                watching <span>educational podcasts</span> and <span>docuseries</span>, engaging in various
+                <span> sports</span>, exploring new <span>places</span>, and encountering nonconformist people. Music
+                serves as my soul's sanctuary and the sense of
+                <span> personal growth</span> fuels my zest for life.
               </p>
-              <br />
+              <p>
+                In an ideal world, I envision a society where the pursuit of money and materialistic possessions is not
+                the ultimate ambition, and where exploitation does not mar human relations. I dream of a world that
+                values <span>truth, empathy, kindness, and fairness</span> over all else.
+              </p>
+              <p>
+                I live by the principle of Newton's 3rd law: <span>reciprocity</span>. The respect, kindness, and
+                fairness I receive inform how I respond. I strive to uphold fairness and empathy in my interactions and
+                look forward to meeting individuals who share the same values. In other words,
+                <span> I give what I get</span>.
+              </p>
 
               <h4>"Hard" skills</h4>
               <ul>
                 {data?.hardSkills?.map((skill, index) => (
-                  <li key={index}>{skill}</li>
+                  <li key={index} dangerouslySetInnerHTML={createSpecialMarkup(skill)} />
                 ))}
               </ul>
               <h4>"Soft" skills</h4>
               <ul>
                 {data?.softSkills?.map((skill, index) => (
-                  <li key={index}>{skill}</li>
+                  <li key={index} dangerouslySetInnerHTML={createSpecialMarkup(skill)} />
                 ))}
               </ul>
             </section>
@@ -87,7 +177,12 @@ const AboutPage: React.FC = () => {
                   <h4>{job.title}</h4>
                   <div className={styles.jobDetails}>
                     <p>
-                      <a href={job.companyLink} target="_blank" rel="noreferrer noopener">
+                      <a
+                        className={styles.companyLink}
+                        href={job.companyLink}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
                         {job.company}
                       </a>{' '}
                       · {job.type}
@@ -100,7 +195,12 @@ const AboutPage: React.FC = () => {
                       <li key={index}>{task}</li>
                     ))}
                     <li>
-                      <strong>Skills:</strong> {job.skills.join(' · ')}
+                      <strong>Top Skills:</strong>{' '}
+                      {/* {job.skills
+                        .map((skill, skillIndex) => (
+                          <span key={skillIndex} dangerouslySetInnerHTML={createSpecialMarkup(skill)} />
+                        ))
+                        .reduce((prev, curr) => [prev, ' · ', curr])} */}
                     </li>
                   </ul>
                 </article>

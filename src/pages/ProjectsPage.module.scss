@@ -27,7 +27,8 @@
       @include card;
       position: relative;
       overflow: hidden;
-      min-height: 200px;
+      min-height: 20rem;
+      padding: $gap;
 
       &::after {
         background-color: $color-1;

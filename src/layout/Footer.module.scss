@@ -36,5 +36,10 @@ footer {
 
   .copyright {
     margin-right: $gap;
+    font-size: $font-size-xsm;
+
+    @include breakpoint(sm) {
+      font-size: $font-size-sm;
+    }
   }
 }

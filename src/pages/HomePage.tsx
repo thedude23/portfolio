@@ -18,9 +18,13 @@ const HomePage: React.FC = () => {
         mainContent={
           <MainContent className={styles.homePage}>
             <section className={styles.hero}>
-              <h3 className={styles.heroIntro}>Hello, World!</h3>
+              <h3 className={styles.heroIntro}>
+                Hello, <input autoFocus type="text" placeholder="<INSERT YOUR NAME>"></input> !
+              </h3>
               <h1 className={styles.heroTitle}>
+                <div className={styles.heroIntro}>My name is</div>
                 <span>T</span>im <span>K</span>oprivnik
+                <div className={styles.heroIntro}>and I am a</div>
               </h1>
               <h2 className={styles.heroSubtitle}>
                 <span>Web Developer. </span>
