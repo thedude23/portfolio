@@ -27,22 +27,11 @@
       "period": "Aug 2021 - Present",
       "location": "Maribor, Slovenia (remote)",
       "tasks": [
-        "Responsible for building and maintaining websites and web applications using Drupal, Twig, (S)CSS, JavaScript, TypeScript, React, and Next.js",
-        "Collaborate effectively with team members, designers, and clients to ensure high-quality project outcomes",
-        "Participate actively in project management tasks to ensure timely completion of projects"
+        "Developing and maintaining websites and web applications using JavaScript, TypeScript, React, Next.js, Drupal, (S)CSS, Docker, etc.",
+        "Collaborating effectively with other developers, project managers, designers, and clients to ensure high-quality project outcomes",
+        "Participating actively in time estimations to ensure timely completion of projects"
       ],
-      "skills": [
-        "React",
-        "Next.js",
-        "JavaScript",
-        "TypeScript",
-        "(S)CSS",
-        "Twig",
-        "Drupal",
-        "Docker",
-        "Webpack",
-        "GraphQL"
-      ]
+      "skills": ["React", "Next.js", "JavaScript", "TypeScript", "(S)CSS", "Drupal", "Docker", "Webpack", "GraphQL"]
     },
     {
       "title": "Web Developer & Designer",
@@ -52,9 +41,8 @@
       "period": "Apr 2021 - Aug 2021 (5 mos)",
       "location": "Maribor, Slovenia (remote)",
       "tasks": [
+        "Designed, developed, and maintained websites for clients from various sectors using Figma, WordPress, PHP, MySQL, CSS, and Javascript",
         "Actively engaged in the full development cycle, from ideation and design through to development, testing, deployment, and review",
-        "Developed and maintained user-centric websites using CSS, PHP, and WordPress, ensuring responsiveness and compatibility across devices",
-        "Leveraged Figma to design aesthetically pleasing and user-friendly interfaces, enhancing user experience and engagement",
         "Provided technical support to clients, troubleshooting and resolving issues to ensure optimal website functionality and user satisfaction"
       ],
       "skills": ["PHP", "WordPress", "MySQL", "CSS", "Figma", "Technical Support"]
@@ -67,9 +55,8 @@
       "period": "Nov 2020 - Apr 2021 (6 mos)",
       "location": "Graz, Austria (remote)",
       "tasks": [
-        "Developed and maintained dynamic WordPress websites, incorporating custom plugins for enhanced functionality",
-        "Utilized programming languages such as PHP, JavaScript, and libraries like Frontity (React for WP) for efficient web development",
-        "Applied Adobe XD proficiency for designing engaging and user-friendly interfaces"
+        "Designed, developed, and maintained various WordPress websites for primary schools in Austria using AdobeXD, WordPress, PHP, MySQL, CSS, JavaScript, and Frontity (React for WP) ",
+        "Developed custom plugin responsible for connecting to the internal app"
       ],
       "skills": ["PHP", "WordPress", "MySQL", "JavaScript", "Frontity (React)", "Adobe XD"]
     },
@@ -81,9 +68,8 @@
       "period": "Aug 2019 - Oct 2020 (1 yr 3 mos)",
       "location": "Maribor, Slovenia (hybrid)",
       "tasks": [
-        "Worked on the development and design of web ads for different campaigns, using skills in CSS, JavaScript, jQuery, and HTML",
-        "Provided practical technical support and troubleshooting, ensuring smooth running of web ad campaigns",
-        "Utilized Adobe Photoshop to help design and enhance the appearance of ads"
+        "Designed and developed web ads for different campaigns using Photoshop, HTML, CSS, JavaScript, and jQuery",
+        "Occasionally worked on adding new features to internal CMS using PHP"
       ],
       "skills": ["HTML", "CSS", "JavaScript", "jQuery", "PHP", "Adobe Photoshop"]
     }
