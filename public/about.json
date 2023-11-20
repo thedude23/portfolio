@@ -46,17 +46,17 @@
     },
     {
       "title": "Web Developer & Designer",
-      "company": "Interstellar Support; WEB-TIX, Tim Koprivnik s.p.",
+      "company": "Interstellar Support",
       "companyLink": "https://interstellarsupport.com/",
-      "type": "Freelance",
+      "type": "Contract",
       "period": "Apr 2021 - Aug 2021 (5 mos)",
       "location": "United States (Remote)",
       "tasks": [
-        "Designed, developed, and maintained websites for clients from various sectors",
+        "Designed, developed, and maintained websites and eCommerce stores for clients from various sectors",
         "Actively engaged in the full development cycle, from ideation and design through to development, testing, deployment, and review",
         "Provided technical support to clients, troubleshooting and resolving issues to ensure optimal website functionality and user satisfaction"
       ],
-      "skills": ["PHP", "WordPress", "MySQL", "CSS", "Figma", "Technical Support"]
+      "skills": ["PHP", "WordPress", "SquareSpace", "Wix", "MySQL", "CSS", "Figma", "Technical Support"]
     },
     {
       "title": "WordPress Developer",
