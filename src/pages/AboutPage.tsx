@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './AboutPage.module.scss';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
@@ -28,26 +29,6 @@ const highlightKeywords = (text: string, keywords: Keywords) => {
   const regex = new RegExp(`\\b(${keywords.join('|')})\\b`, 'gi');
   return text.replace(regex, (match) => `<span class="highlight">${match}</span>`);
 };
-
-// const highlightKeywords = (text: string, keywords: Keywords) => {
-//   // Escape special characters and replace spaces with \s+ to match one or more spaces
-//   const escapedKeywords = keywords.map((keyword) =>
-//     keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+'),
-//   );
-//   const regex = new RegExp(`(${escapedKeywords.join('|')})`, 'gi');
-//   return text.replace(regex, (match) => `<span class="highlight">${match}</span>`);
-// };
-
-// const escapeRegExp = (string: string) => {
-//   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-// };
-
-// const highlightKeywords = (text: string, keywords: Keywords) => {
-//   // Escape special regex characters and join the keywords
-//   const regexPattern = keywords.map(escapeRegExp).join('|');
-//   const regex = new RegExp(`(${regexPattern})`, 'gi');
-//   return text.replace(regex, (match) => `<span class="highlight">${match}</span>`);
-// };
 
 const keywords = [
   'HTML',
@@ -84,6 +65,8 @@ const keywords = [
   'Flask',
   'Drupal',
   'WordPress',
+  'Squarespace',
+  'Wix',
   'Adobe XD',
   'Figma',
   'Adobe',
@@ -196,11 +179,12 @@ const AboutPage: React.FC = () => {
                     ))}
                     <li>
                       <strong>Top Skills:</strong>{' '}
-                      {/* {job.skills
-                        .map((skill, skillIndex) => (
-                          <span key={skillIndex} dangerouslySetInnerHTML={createSpecialMarkup(skill)} />
-                        ))
-                        .reduce((prev, curr) => [prev, ' · ', curr])} */}
+                      {job.skills.map((skill, index) => (
+                        <React.Fragment key={index}>
+                          {index !== 0 && ' · '}
+                          <span dangerouslySetInnerHTML={createSpecialMarkup(skill)} />
+                        </React.Fragment>
+                      ))}
                     </li>
                   </ul>
                 </article>
