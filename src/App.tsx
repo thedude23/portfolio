@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import RootLayout from './pages/Root';
-import ErrorPage from './pages/ErrorPage';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
-import ProjectsPage from './pages/ProjectsPage';
+import Root from './pages/Root';
+import Error from './pages/Error';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Projects from './pages/Projects';
 import AnimatedCursor from 'react-animated-cursor';
 // import ReactGA from 'react-ga4';
 
@@ -25,7 +25,7 @@ const RoutesComponent = () => {
   return (
     <>
       <AnimatedCursor
-        innerSize={12}
+        innerSize={18}
         outerSize={12}
         color="161, 55, 227"
         outerAlpha={0.2}
@@ -33,13 +33,13 @@ const RoutesComponent = () => {
         outerScale={3}
       />
       <Routes>
-        <Route path="/" element={<RootLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="projects" element={<ProjectsPage />} />
+        <Route path="/" element={<Root />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="projects" element={<Projects />} />
         </Route>
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </>
   );

@@ -1,4 +1,4 @@
-import styles from './ProjectsPage.module.scss';
+import styles from './Projects.module.scss';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import MainContent from '../layout/MainContent';
@@ -64,7 +64,7 @@ const imageMap: { [key: string]: string } = {
   'tmdb.png': tmdbImg,
 };
 
-const ProjectsPage: React.FC = () => {
+const Projects: React.FC = () => {
   const [data, isLoading, error] = useFetch<ProjectsData>('../../projects.json');
 
   if (isLoading) {
@@ -131,4 +131,4 @@ const ProjectsPage: React.FC = () => {
   );
 };
 
-export default ProjectsPage;
+export default Projects;

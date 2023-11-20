@@ -1,11 +1,11 @@
-import styles from './ContactPage.module.scss';
+import styles from './Contact.module.scss';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import { BsFillEnvelopeFill } from 'react-icons/bs';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { Helmet } from 'react-helmet';
 
-const ContactPage: React.FC = () => {
+const Contact: React.FC = () => {
   return (
     <>
       <Helmet>
@@ -39,4 +39,4 @@ const ContactPage: React.FC = () => {
   );
 };
 
-export default ContactPage;
+export default Contact;

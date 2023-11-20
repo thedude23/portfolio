@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './AboutPage.module.scss';
+import styles from './About.module.scss';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import MainContent from '../layout/MainContent';
@@ -86,7 +86,7 @@ const keywords = [
   'Technical support',
 ];
 
-const AboutPage: React.FC = () => {
+const About: React.FC = () => {
   const [data, isLoading, error] = useFetch<AboutData>('../../about.json');
 
   if (isLoading) {
@@ -105,7 +105,7 @@ const AboutPage: React.FC = () => {
     <>
       <Helmet>
         <title>About</title>
-        <meta name="description" content="About me page" />
+        <meta name="description" content="About page" />
       </Helmet>
       <Header />
       <PageTemplate
@@ -198,4 +198,4 @@ const AboutPage: React.FC = () => {
   );
 };
 
-export default AboutPage;
+export default About;
