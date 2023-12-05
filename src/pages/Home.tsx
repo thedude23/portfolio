@@ -19,9 +19,9 @@ const Home: React.FC = () => {
           <MainContent className={styles.homePage}>
             <section className={styles.hero}>
               <h1 className={styles.heroTitle}>
-                <span className={styles.heroIntro}>My name is</span>
+                <div className={styles.heroIntro}>My name is</div>
                 <span>T</span>im <span>K</span>oprivnik
-                <span className={styles.heroIntro}>and I am a</span>
+                <div className={styles.heroIntro}>and I am a</div>
               </h1>
               <h2 className={styles.heroSubtitle}>
                 <span>(FE) Web Developer. </span>
