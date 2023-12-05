@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react';
 
-interface PageTemplateProps {
+type PageTemplateProps = {
   sidebar?: ReactNode;
   mainContent: ReactNode;
-}
+};
 
 const PageTemplate: React.FC<PageTemplateProps> = ({ sidebar, mainContent }) => {
   return (

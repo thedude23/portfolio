@@ -8,7 +8,7 @@ import useFetch from '../hooks/useFetch';
 import { Helmet } from 'react-helmet';
 import imageOfMe from '../assets/me_no_bg.png';
 
-interface AboutData {
+type AboutData = {
   hardSkills: string[];
   softSkills: string[];
   jobs: {
@@ -21,7 +21,7 @@ interface AboutData {
     tasks: string[];
     skills: string[];
   }[];
-}
+};
 
 type Keywords = string[];
 

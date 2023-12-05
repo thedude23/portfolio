@@ -26,22 +26,22 @@ import portfolioImg from '../assets/portfolio.png';
 import forkifyImg from '../assets/forkify.png';
 import tmdbImg from '../assets/tmdb.png';
 
-interface Link {
+type Link = {
   type: string;
   url: string;
   icon: string;
-}
+};
 
-interface Project {
+type Project = {
   name: string;
   image: keyof typeof imageMap;
   description: string;
   links: Link[];
-}
+};
 
-interface ProjectsData {
+type ProjectsData = {
   projects: Project[];
-}
+};
 
 const imageMap: { [key: string]: string } = {
   'fast-react-pizza.png': fastReactPizzaImg,
