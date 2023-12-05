@@ -25,6 +25,7 @@ import covidImg from '../assets/covid-19.jpg';
 import portfolioImg from '../assets/portfolio.png';
 import forkifyImg from '../assets/forkify.png';
 import tmdbImg from '../assets/tmdb.png';
+import ProjectList from '../components/ProjectList';
 
 type Link = {
   type: string;
@@ -34,7 +35,7 @@ type Link = {
 
 type Project = {
   name: string;
-  image: keyof typeof imageMap;
+  image: string;
   description: string;
   links: Link[];
 };
@@ -99,30 +100,7 @@ const Projects: React.FC = () => {
               </a>
               .
             </p>
-
-            <section className={styles.projects}>
-              {data?.projects?.map((project: Project, index: number) => (
-                <div className={styles.project} key={index}>
-                  <h4 className={styles.projectName}>{project.name}</h4>
-                  <p className={styles.projectDescription}>{project.description}</p>
-                  <img src={imageMap[project.image]} alt={project.name} />
-                  <div className={styles.projectLinks}>
-                    {project.links.map((link: Link, linkIndex: number) => (
-                      <a
-                        key={linkIndex}
-                        href={link.url}
-                        className={styles.projectLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <i className={`icon ${link.icon}`} />
-                        {link.type}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </section>
+            <ProjectList projects={data?.projects || []} imageMap={imageMap} />
           </MainContent>
         }
       />

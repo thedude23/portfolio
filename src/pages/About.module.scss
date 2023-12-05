@@ -17,56 +17,6 @@
       font-size: $font-size-xl;
     }
   }
-
-  .about {
-    img.image-of-me {
-      display: none;
-
-      @include breakpoint(md) {
-        display: block;
-        height: 35rem;
-        float: left;
-        margin-right: $gap-double;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 1px solid $color-2;
-      }
-    }
-
-    p {
-      margin-bottom: $gap-and-half;
-
-      span {
-        color: $color-2;
-      }
-    }
-  }
-
-  .jobs {
-    @include grid;
-    display: grid;
-    gap: $gap-double;
-    grid-template-rows: auto;
-
-    .job {
-      @include card;
-      border: $border-default;
-      padding: $gap-double;
-
-      h4 {
-        padding: 0;
-      }
-
-      &-details {
-        font-size: $font-size-sm;
-        margin: $gap 0;
-      }
-
-      p {
-        font-style: italic;
-      }
-    }
-  }
 }
 
 .apiText {

@@ -7,6 +7,9 @@ import PageTemplate from '../templates/PageTemplate';
 import useFetch from '../hooks/useFetch';
 import { Helmet } from 'react-helmet';
 import imageOfMe from '../assets/me_no_bg.png';
+import JobList from '../components/JobList';
+import Bio from '../components/Bio';
+import SkillList from '../components/SkillList';
 
 type AboutData = {
   hardSkills: string[];
@@ -113,78 +116,13 @@ const About: React.FC = () => {
           <MainContent className={styles.aboutPage}>
             <h1 className={styles.pageTitle}>Bio</h1>
             <h2 className={styles.sectionTitle}>About me</h2>
-
-            <section className={styles.about}>
-              <img src={imageOfMe} alt="Me" className={styles.imageOfMe} />
-              <p>
-                I'm an <span>open-minded</span> individual with a penchant for <span>simplicity</span> and
-                <span> peace</span>. I place great value on living an <span>intentional</span> life guided by
-                <span> Buddhist</span> principles, and strive to cultivate a mindset of
-                <span> continuous learning</span> and <span>personal growth</span>. My interests span a broad spectrum,
-                from <span> gaming</span>, diving into a good <span>book</span>, listening to chill <span>music</span>,
-                watching <span>educational podcasts</span> and <span>docuseries</span>, engaging in various
-                <span> sports</span>, exploring new <span>places</span>, and encountering nonconformist people. Music
-                serves as my soul's sanctuary and the sense of
-                <span> personal growth</span> fuels my zest for life.
-              </p>
-              <p>
-                In an ideal world, I envision a society where the pursuit of money and materialistic possessions is not
-                the ultimate ambition, and where exploitation does not mar human relations. I dream of a world that
-                values <span>truth, empathy, kindness, and fairness</span> over all else.
-              </p>
-              <p>
-                I live by the principle of Newton's 3rd law: <span>reciprocity</span>. The respect, kindness, and
-                fairness I receive inform how I respond. I strive to uphold fairness and empathy in my interactions and
-                look forward to meeting individuals who share the same values. In other words,
-                <span> I give what I get</span>.
-              </p>
-
-              <h4>"Hard" skills</h4>
-              <ul>
-                {data?.hardSkills?.map((skill, index) => (
-                  <li key={index} dangerouslySetInnerHTML={createSpecialMarkup(skill)} />
-                ))}
-              </ul>
-              <h4>"Soft" skills</h4>
-              <ul>
-                {data?.softSkills?.map((skill, index) => (
-                  <li key={index} dangerouslySetInnerHTML={createSpecialMarkup(skill)} />
-                ))}
-              </ul>
-            </section>
-
-            <section className={styles.jobs}>
-              <h2 className={styles.sectionTitle}>Jobs</h2>
-              {data?.jobs?.map((job, index) => (
-                <article className={styles.job} key={index}>
-                  <h4>{job.title}</h4>
-                  <div className={styles.jobDetails}>
-                    <p>
-                      <a href={job.companyLink} target="_blank" rel="noreferrer noopener">
-                        {job.company}
-                      </a>{' '}
-                      · {job.type}
-                    </p>
-                    <p>{job.period}</p>
-                    <p>{job.location}</p>
-                  </div>
-                  <ul>
-                    {job.tasks.map((task, index) => (
-                      <li key={index}>{task}</li>
-                    ))}
-                    <li>
-                      <strong>Top Skills:</strong>{' '}
-                      {job.skills.map((skill, index) => (
-                        <React.Fragment key={index}>
-                          {index !== 0 && ' · '}
-                          <span dangerouslySetInnerHTML={createSpecialMarkup(skill)} />
-                        </React.Fragment>
-                      ))}
-                    </li>
-                  </ul>
-                </article>
-              ))}
-            </section>
+            <Bio />
+            <SkillList
+              hardSkills={data?.hardSkills || []}
+              softSkills={data?.softSkills || []}
+              createSpecialMarkup={createSpecialMarkup}
+            />
+            <JobList jobs={data?.jobs || []} createSpecialMarkup={createSpecialMarkup} />
           </MainContent>
         }
       />

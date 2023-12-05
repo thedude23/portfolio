@@ -1,0 +1,27 @@
+@import '../scss/library/index';
+
+.jobs {
+  @include grid;
+  display: grid;
+  gap: $gap-double;
+  grid-template-rows: auto;
+
+  .job {
+    @include card;
+    border: $border-default;
+    padding: $gap-double;
+
+    h4 {
+      padding: 0;
+    }
+
+    &-details {
+      font-size: $font-size-sm;
+      margin: $gap 0;
+    }
+
+    p {
+      font-style: italic;
+    }
+  }
+}
