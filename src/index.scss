@@ -1,5 +1,11 @@
 @import './scss/styles.scss';
 
+::selection {
+  background-color: $color-3;
+  color: $color-1;
+}
+
+// Body and dark theme mode
 body {
   position: relative;
   z-index: 0;
@@ -14,15 +20,45 @@ body {
     background-color: $color-3;
     color: $color-1;
 
+    // Text
     p {
       color: $color-1;
+    }
+
+    // Links
+    a {
+      &:hover,
+      &:active {
+        color: $color-5;
+      }
+    }
+
+    .menu-nav {
+      background: $color-3;
+
+      // Menu links
+      &-link {
+        &.active {
+          color: $color-5;
+        }
+      }
+    }
+
+    // Hero subtitle text
+    .hero-subtitle {
+      span:nth-of-type(3n) {
+        color: $color-5;
+      }
     }
   }
 }
 
-::selection {
-  background-color: $color-3;
-  color: $color-1;
+// Text
+p {
+  color: $color-3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-spacing: normal;
 }
 
 span {
@@ -33,13 +69,7 @@ label {
   font-weight: $font-weight-bold;
 }
 
-p {
-  color: $color-3;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-spacing: normal;
-}
-
+// Inputs
 input[type='text'] {
   background-color: $color-4;
   color: $color-2;
@@ -57,17 +87,19 @@ input[type='text']::placeholder {
   font-size: $font-size-sm;
 }
 
+// Links
 a {
   text-decoration: none;
   color: $color-2;
   transition: color 0.2s ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:active {
     color: $color-4;
-    text-decoration: underline !important;
   }
 }
 
+// Headings
 h1,
 h2,
 h3,
@@ -132,116 +164,7 @@ h4 {
   }
 }
 
-// Headings
-@mixin heading-1(
-  $font-family: $font-family,
-  $font-size: $font-size-lg,
-  $line-height: $line-height,
-  $color: $color-2,
-  $color-link: inherit,
-  $color-link-hover: inherit,
-  $font-weight: $font-weight-thin,
-  $margin: $heading-margin-default
-) {
-  color: #{$color};
-  font-family: #{$font-family};
-  font-weight: #{$font-weight};
-  font-style: normal;
-  font-size: #{$h1-font-size};
-  line-height: #{$line-height};
-  margin: #{$margin};
-  width: auto;
-
-  @include breakpoint($md) {
-    font-size: $font-size-xl;
-  }
-
-  @include breakpoint($lg) {
-    font-size: $font-size-xxl;
-  }
-
-  a,
-  &__link {
-    color: $color-link;
-
-    &:hover {
-      color: $color-link-hover;
-    }
-  }
-}
-
-@mixin heading-2(
-  $font-family: $font-family,
-  $font-size: $font-size-md,
-  $line-height: $line-height,
-  $color: $color-2,
-  $color-link: inherit,
-  $color-link-hover: inherit,
-  $font-weight: $font-weight-thin,
-  $margin: $heading-margin-default
-) {
-  color: #{$color};
-  font-family: #{$font-family};
-  font-weight: #{$font-weight};
-  font-style: normal;
-  font-size: #{$h1-font-size};
-  line-height: #{$line-height};
-  margin: #{$margin};
-  width: auto;
-
-  @include breakpoint($md) {
-    font-size: $font-size-lg;
-  }
-
-  @include breakpoint($lg) {
-    font-size: $font-size-xl;
-  }
-
-  &__link {
-    color: $color-link;
-
-    &:hover {
-      color: $color-link-hover;
-    }
-  }
-}
-
-@mixin heading-3(
-  $font-family: $font-family,
-  $font-size: $font-size,
-  $line-height: $line-height,
-  $color: $color-2,
-  $color-link: inherit,
-  $color-link-hover: inherit,
-  $font-weight: $font-weight-thin,
-  $margin: $heading-margin-default
-) {
-  color: #{$color};
-  font-family: #{$font-family};
-  font-weight: #{$font-weight};
-  font-style: normal;
-  font-size: #{$h1-font-size};
-  line-height: #{$line-height};
-  margin: #{$margin};
-  width: auto;
-
-  @include breakpoint($md) {
-    font-size: $font-size-md;
-  }
-
-  @include breakpoint($lg) {
-    font-size: $font-size-lg;
-  }
-
-  &__link {
-    color: $color-link;
-
-    &:hover {
-      color: $color-link-hover;
-    }
-  }
-}
-
+// Lists
 ul,
 ol {
   margin-top: 0;
@@ -250,9 +173,9 @@ ol {
 
   li {
     &::marker {
-      color: $color-4;
+      color: $color-2;
       content: '› ';
-      font-size: 1.5rem;
+      font-size: $font-size-md;
       padding-left: $gap-double;
     }
   }

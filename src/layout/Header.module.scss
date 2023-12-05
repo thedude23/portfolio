@@ -146,6 +146,18 @@ header {
     }
   }
 
+  button.theme-toggle-button {
+    background: transparent;
+    border: none;
+    cursor: pointer !important;
+    position: absolute;
+    left: $gap-double;
+    width: auto;
+    display: flex;
+    margin-left: -$gap;
+    background-color: yellow;
+  }
+
   @for $i from 1 through 4 {
     .menu-nav-item:nth-child(#{$i}) {
       transition-delay: ($i * 0.1s) + 0.15s;

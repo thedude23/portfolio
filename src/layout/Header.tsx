@@ -1,18 +1,27 @@
+import { useState, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
 import styles from './Header.module.scss';
+import { ThemeContext } from '../context/ThemeContext';
+import { FaMoon, FaSun } from 'react-icons/fa';
 
-interface Props {}
-
-const Header: React.FC<Props> = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+const Header: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
 
   const handleMenuClick = () => {
     setIsOpen((prevState) => !prevState);
   };
 
   return (
-    <header>
+    <header className={styles.header}>
+      {/* <button onClick={toggleDarkMode} className={styles.themeToggleButton}>
+        {isDarkMode ? (
+          <FaSun style={{ color: 'rgb(53, 117, 245)', fontSize: '26px', marginTop: '2px' }} />
+        ) : (
+          <FaMoon style={{ color: 'rgb(53, 117, 245)', fontSize: '26px', marginTop: '2px' }} />
+        )}
+      </button> */}
+
       <div className={isOpen ? `${styles.menuBtn} ${styles.open}` : styles.menuBtn} onClick={handleMenuClick}>
         <span className={isOpen ? `${styles.menuBtnBurger} ${styles.open}` : styles.menuBtnBurger}></span>
       </div>

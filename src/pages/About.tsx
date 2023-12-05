@@ -160,12 +160,7 @@ const About: React.FC = () => {
                   <h4>{job.title}</h4>
                   <div className={styles.jobDetails}>
                     <p>
-                      <a
-                        className={styles.companyLink}
-                        href={job.companyLink}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
+                      <a href={job.companyLink} target="_blank" rel="noreferrer noopener">
                         {job.company}
                       </a>{' '}
                       · {job.type}

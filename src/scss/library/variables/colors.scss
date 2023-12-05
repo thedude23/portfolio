@@ -3,14 +3,16 @@
 /* ----- */
 
 // Text and background colors
-$color-1: rgb(215, 220, 243);
+$color-1: rgb(231, 236, 255);
 $color-2: rgb(53, 117, 245);
-$color-3: rgb(37, 30, 30);
+$color-3: rgb(19, 15, 15);
 $color-4: rgb(16, 39, 86);
+$color-5: rgb(127, 153, 206);
 
 // Links
 $color-link: $color-2;
 $color-link--hover: $color-4;
+$color-link-dark--hover: $color-5;
 
 // Borders
 $color-border: $color-2;

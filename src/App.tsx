@@ -15,8 +15,8 @@ const RoutesComponent = () => {
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
         <Route path="projects" element={<Projects />} />
+        <Route path="contact" element={<Contact />} />
       </Route>
       <Route path="*" element={<Error />} />
     </Routes>
@@ -27,7 +27,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider>
       <AnimatedCursor
-        innerSize={12}
+        innerSize={18}
         outerSize={12}
         color="16, 39, 86"
         outerAlpha={0.2}
