@@ -1,24 +1,2 @@
 @import './normalize';
 @import './reset';
-
-::selection {
-  background-color: $color-4;
-  color: $color-3;
-}
-
-input[type='text'] {
-  background-color: $color-4;
-  color: $color-2;
-  font-size: $font-size-md;
-  outline: none;
-  border: 1px solid $color-2;
-  min-width: 16rem;
-  padding: $gap-half;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-input[type='text']::placeholder {
-  color: $color-2;
-  font-size: $font-size-sm;
-}

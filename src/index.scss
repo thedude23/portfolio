@@ -3,12 +3,26 @@
 body {
   position: relative;
   z-index: 0;
-  background-color: $color-body-bg;
-  color: $color-text;
   font-family: $font-family;
   font-size: $font-size;
   font-weight: 400;
   word-wrap: break-word;
+  background-color: $color-1;
+  color: $color-3;
+
+  &.dark-mode {
+    background-color: $color-3;
+    color: $color-1;
+
+    p {
+      color: $color-1;
+    }
+  }
+}
+
+::selection {
+  background-color: $color-3;
+  color: $color-1;
 }
 
 span {
@@ -20,18 +34,37 @@ label {
 }
 
 p {
-  color: $color-text;
+  color: $color-3;
   overflow: hidden;
   text-overflow: ellipsis;
   word-spacing: normal;
 }
 
-a {
+input[type='text'] {
+  background-color: $color-4;
   color: $color-2;
+  font-size: $font-size-md;
+  outline: none;
+  border: 1px solid $color-2;
+  min-width: 16rem;
+  padding: $gap-half;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+input[type='text']::placeholder {
+  color: $color-2;
+  font-size: $font-size-sm;
+}
+
+a {
   text-decoration: none;
+  color: $color-2;
+  transition: color 0.2s ease-in-out;
 
   &:hover {
     color: $color-4;
+    text-decoration: underline !important;
   }
 }
 
