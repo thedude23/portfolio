@@ -24,32 +24,6 @@ body {
     p {
       color: $color-1;
     }
-
-    // Links
-    a {
-      &:hover,
-      &:active {
-        color: $color-5;
-      }
-    }
-
-    .menu-nav {
-      background: $color-3;
-
-      // Menu links
-      &-link {
-        &.active {
-          color: $color-5;
-        }
-      }
-    }
-
-    // Hero subtitle text
-    .hero-subtitle {
-      span:nth-of-type(3n) {
-        color: $color-5;
-      }
-    }
   }
 }
 
@@ -95,7 +69,7 @@ a {
 
   &:hover,
   &:active {
-    color: $color-4;
+    color: $color-5;
   }
 }
 

@@ -1,0 +1,13 @@
+@import '../scss/library/index';
+
+button.theme-toggle-button {
+  background: transparent;
+  border: none;
+  cursor: pointer !important;
+  position: absolute;
+  left: $gap-double;
+  width: auto;
+  display: flex;
+  margin-left: -$gap;
+  z-index: 10000;
+}

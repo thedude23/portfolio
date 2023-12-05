@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import RootLayout from './pages/Root';
 import Error from './pages/Error';
 import Home from './pages/Home';
@@ -29,7 +30,7 @@ const App: React.FC = () => {
       <AnimatedCursor
         innerSize={18}
         outerSize={12}
-        color="16, 39, 86"
+        color="127, 153, 206"
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={3}

@@ -1,0 +1,80 @@
+@import '../scss/library/index';
+
+nav {
+  left: 0;
+  opacity: 0.99;
+  position: fixed;
+  top: -$gap-double;
+  visibility: hidden;
+  width: 100vw;
+  z-index: 1000;
+
+  @include breakpoint(lg) {
+    visibility: visible; // Initially visible on desktop
+    margin-bottom: 0;
+    padding: 0 $gap;
+  }
+
+  &.open {
+    visibility: visible; // Visible on mobile and tablet by click on hamburger icon
+  }
+
+  .menu-nav {
+    align-items: center;
+    background: $color-1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    margin-top: $gap-double;
+    transform: translateY(-100%);
+    @include transition-ease;
+
+    @include breakpoint(lg) {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+    }
+
+    &.open {
+      transform: translateY(0);
+    }
+
+    &-item {
+      transform: translateX(100vw);
+      @include transition-ease;
+
+      @include breakpoint(lg) {
+        display: inline;
+        padding-right: 1.5rem;
+      }
+
+      &.open {
+        transform: translateX(0);
+      }
+    }
+
+    &-link {
+      display: inline-block;
+      font-weight: $font-weight-bold;
+      padding: $gap-double 0;
+      text-transform: uppercase;
+      @include transition-ease;
+      color: $color-2;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-link--hover;
+      }
+
+      &.active {
+        color: $color-5;
+      }
+    }
+  }
+}
