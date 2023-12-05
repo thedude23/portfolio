@@ -1,11 +1,11 @@
-import styles from './ErrorPage.module.scss';
+import styles from './Error.module.scss';
 import { useNavigate } from 'react-router-dom';
 import { IoArrowBackOutline } from 'react-icons/io5';
 import PageTemplate from '../templates/PageTemplate';
 import MainContent from '../layout/MainContent';
 import { Helmet } from 'react-helmet';
 
-const ErrorPage: React.FC = () => {
+const Error: React.FC = () => {
   const navigate = useNavigate();
 
   const goBackHandler = () => {
@@ -34,4 +34,4 @@ const ErrorPage: React.FC = () => {
   );
 };
 
-export default ErrorPage;
+export default Error;
