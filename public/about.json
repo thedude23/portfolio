@@ -1,21 +1,24 @@
 {
   "hardSkills": [
     "Extensive experience in creating modern websites and web applications with HTML, CSS, Sass, JavaScript, TypeScript, React, and Next.js",
-    "Strong understanding of React library best practices and conventions",
+    "Strong understanding of React library best practices and conventions (Router, Redux, Tanstack Query, React Hook Form, React Testing Library, Jest, Storybook, ...), plus experience with SSG and SSR",
     "Strong understanding of front-end methodologies (BEM, SMACSS, Atomic design) and accessibility standards (WCAG)",
-    "Proficiency in using development tools including npm, yarn, gulp, Webpack, Docker, as well as version control systems like Git",
-    "Extensive experience in working with APIs, including REST and GraphQL (w/ Apollo)",
+    "Know-how knowledge of Node.js (+ Express), PHP, (My)SQL, MongoDB (+ Mongoose), Supabase, and Firebase",
+    "Substantial expertise in CMS platforms like Drupal and WordPress",
+    "Proficiency in using development tools including npm, yarn, gulp, Webpack, Docker",
+    "Extensive experience with version control systems like Git",
+    "Extensive experience in working with APIs, including GraphQL (+ Apollo)",
     "Extensive experience in optimizing speed (Lighthouse, PageSpeed Insights), SEO, and cross-browser and cross-device testing",
-    "Experience with back-end technologies such as (My)SQL, Supabase, Firebase, PHP, and Python (Flask), coupled with substantial expertise in CMS platforms like Drupal and WordPress",
-    "Experience with design tools like Adobe XD, Figma, Photoshop, and a strong understanding of UI/UX principles",
-    "Competence in Agile scrum methodology, project management tools, and team communication platforms"
+    "Experience with design tools like Adobe XD, Figma, Photoshop, plus a good understanding of UI/UX principles",
+    "Competence in Agile scrum methodology, project management tools, and team communication platforms",
+    "Experience with working on large-scale projects and in big teams"
   ],
   "softSkills": [
-    "Fluency in English",
-    "Consistent reliability, dedication, and self-motivation",
+    "Fluency in the English language",
+    "Consistency, reliability, dedication, and self-motivation",
     "Inherent curiosity with a constant desire to learn and improve",
     "Methodical and organized in approach to work, with a strong attention to detail",
-    "Possessing an open-minded and fair attitude, underscored by a commitment to kindness in interpersonal interactions",
+    "Possession of an open-minded and fair attitude, underscored by a commitment to kindness in interpersonal interactions",
     "Natural ability to understand and relate to diverse human behavior and perspectives"
   ],
   "jobs": [
@@ -28,8 +31,7 @@
       "location": "Maribor, Slovenia (Remote)",
       "tasks": [
         "Developing and maintaining websites and web applications",
-        "Collaborating effectively with other developers, project managers, designers, and clients to ensure high-quality project outcomes",
-        "Participating actively in time estimations to ensure timely completion of projects"
+        "Collaborating effectively with other developers, project managers, designers, and clients to ensure high-quality project outcomes"
       ],
       "skills": [
         "React",
