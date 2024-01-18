@@ -13,14 +13,14 @@ const Bio: React.FC = () => {
         <span> continuous learning</span> and <span>personal growth</span>. My interests span a broad spectrum, from{' '}
         <span> gaming</span>, diving into a good <span>book</span>, listening to chill <span>music</span>, watching{' '}
         <span>educational podcasts</span> and <span>docuseries</span>, engaging in various
-        <span> sports</span>, exploring new <span>places</span>, and encountering nonconformist people. Music serves as
+        <span> sports</span>, <span>exploring</span> new places, and encountering nonconformist people. Music serves as
         my soul's sanctuary and the sense of
         <span> personal growth</span> fuels my zest for life.
       </p>
       <p>
         In an ideal world, I envision a society where the pursuit of money and materialistic possessions is not the
         ultimate ambition, and where exploitation does not mar human relations. I dream of a world that values{' '}
-        <span>truth, empathy, kindness, and fairness</span> over all else.
+        <span>truth, empathy, kindness, and fairness</span> over all else. (Delusional, I know.)
       </p>
       <p>
         I live by the principle of Newton's 3rd law: <span>reciprocity</span>. The respect, kindness, and fairness I

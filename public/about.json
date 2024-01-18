@@ -1,17 +1,16 @@
 {
   "hardSkills": [
-    "Extensive experience in creating modern websites and web applications with HTML, CSS, Sass, JavaScript, TypeScript, React, and Next.js",
+    "4+ years of work experience creating modern websites and web apps",
+    "Very good knowledge of frontend technologies (HTML, CSS, Sass, JavaScript, TypeScript, React, and Next.js)",
     "Strong understanding of React library best practices and conventions (Router, Redux, Tanstack Query, React Hook Form, React Testing Library, Jest, Storybook, ...), plus experience with SSG and SSR",
-    "Strong understanding of front-end methodologies (BEM, SMACSS, Atomic design) and accessibility standards (WCAG)",
-    "Know-how knowledge of Node.js (+ Express), PHP, (My)SQL, MongoDB (+ Mongoose), Supabase, and Firebase",
-    "Substantial expertise in CMS platforms like Drupal and WordPress",
-    "Proficiency in using development tools including npm, yarn, gulp, Webpack, Docker",
-    "Extensive experience with version control systems like Git",
-    "Extensive experience in working with APIs, including GraphQL (+ Apollo)",
-    "Extensive experience in optimizing speed (Lighthouse, PageSpeed Insights), SEO, and cross-browser and cross-device testing",
-    "Experience with design tools like Adobe XD, Figma, Photoshop, plus a good understanding of UI/UX principles",
-    "Competence in Agile scrum methodology, project management tools, and team communication platforms",
-    "Experience with working on large-scale projects and in big teams"
+    "Strong understanding of frontend methodologies (BEM, SMACSS, Atomic design) and accessibility standards (WCAG)",
+    "Decent knowledge of backend technologies (Node.js + Express, PHP, (My)SQL, MongoDB + Mongoose, Supabase, and Firebase",
+    "Proficiency in using development tools (npm, yarn, gulp, Webpack, Docker)",
+    "Extensive experience with version control systems (Git)",
+    "Extensive experience working with APIs, including GraphQL (+ Apollo)",
+    "Lots of experience with CMS platforms (Drupal, WordPress, Squarespace, Wix)",
+    "Decent experience with optimizing page speed (Lighthouse, PageSpeed Insights), SEO, and cross-browser/cross-device testing",
+    "Decent experience with design tools (Adobe XD, Figma, Photoshop), plus a good understanding of UI/UX principles"
   ],
   "softSkills": [
     "Fluency in the English language",
@@ -27,10 +26,10 @@
       "company": "Agiledrop",
       "companyLink": "https://www.agiledrop.com/",
       "type": "Full-time",
-      "period": "Aug 2021 - Present",
+      "period": "Aug 2021 - Feb 2024 (2 yrs 7 mos)",
       "location": "Maribor, Slovenia (Remote)",
       "tasks": [
-        "Developing and maintaining websites and web applications",
+        "Developing and maintaining websites and web apps for clients from various sectors",
         "Collaborating effectively with other developers, project managers, designers, and clients to ensure high-quality project outcomes"
       ],
       "skills": [
