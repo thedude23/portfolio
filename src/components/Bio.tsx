@@ -26,7 +26,7 @@ const Bio: React.FC = () => {
       <p>
         Driven by the principle of <span>reciprocity</span>, I believe in giving back what I receive, approaching each
         project and team interaction with <span>fairness</span>, <span>empathy</span>, and a
-        <span>willingness to understand and relate </span>
+        <span> willingness to understand and relate </span>
         to diverse perspectives. This mindset not only enriches my personal life but also enhances my ability to connect
         with and contribute to diverse teams in the dynamic field of web development.
       </p>
