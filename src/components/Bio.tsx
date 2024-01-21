@@ -7,26 +7,28 @@ const Bio: React.FC = () => {
     <section className={styles.about}>
       <img src={imageOfMe} alt="Me" className={styles.imageOfMe} />
       <p>
-        I'm an <span>open-minded</span> individual with a penchant for <span>simplicity</span> and
-        <span> peace</span>. I place great value on living an <span>intentional</span> life guided by
-        <span> Buddhist</span> principles, and strive to cultivate a mindset of
-        <span> continuous learning</span> and <span>personal growth</span>. My interests span a broad spectrum, from{' '}
-        <span> gaming</span>, diving into a good <span>book</span>, listening to chill <span>music</span>, watching{' '}
-        <span>educational podcasts</span> and <span>docuseries</span>, engaging in various
-        <span> sports</span>, <span>exploring</span> new places, and encountering nonconformist people. Music serves as
-        my soul's sanctuary and the sense of
-        <span> personal growth</span> fuels my zest for life.
+        As a seasoned Frontend Web Developer/Engineer, I bring a unique blend of technical expertise and philosophical
+        insight to my work. My approach is grounded in a commitment to <span>simplicity</span>, <span>efficiency</span>,
+        and <span>mindfulness</span>, influenced by my studies in philosophy and my dedication to living an intentional
+        life.
       </p>
       <p>
-        In an ideal world, I envision a society where the pursuit of money and materialistic possessions is not the
-        ultimate ambition, and where exploitation does not mar human relations. I dream of a world that values{' '}
-        <span>truth, empathy, kindness, and fairness</span> over all else. (Delusional, I know.)
+        I am deeply passionate about <span>continuous learning</span> and <span>personal growth</span>, constantly
+        seeking to enhance my technical skills and broaden my understanding of the digital landscape.
       </p>
       <p>
-        I live by the principle of Newton's 3rd law: <span>reciprocity</span>. The respect, kindness, and fairness I
-        receive inform how I respond. I strive to uphold fairness and empathy in my interactions and look forward to
-        meeting individuals who share the same values. In other words,
-        <span> I give what I get</span>.
+        My interests extend beyond the screen, encompassing a love for <span>literature</span>, <span>music</span>, and
+        engaging with diverse ideas through <span>podcasts</span> and <span>documentaries</span>. I am an advocate for
+        creating a more empathetic and fair society, believing strongly in the principles of <span>truth</span>,{' '}
+        <span>kindness</span>, and <span>mutual respect</span>. In my professional interactions, I strive to embody
+        these values, fostering collaborative and positive relationships with colleagues and clients alike.
+      </p>
+      <p>
+        Driven by the principle of <span>reciprocity</span>, I believe in giving back what I receive, approaching each
+        project and team interaction with <span>fairness</span>, <span>empathy</span>, and a
+        <span>willingness to understand and relate </span>
+        to diverse perspectives. This mindset not only enriches my personal life but also enhances my ability to connect
+        with and contribute to diverse teams in the dynamic field of web development.
       </p>
     </section>
   );

@@ -1,23 +1,23 @@
 {
   "hardSkills": [
-    "4+ years of professional experience creating modern websites and web apps",
-    "Very good knowledge of frontend technologies (HTML, (S)CSS, JavaScript, TypeScript, React, and Next.js)",
-    "Strong understanding of React library best practices and conventions (Router, Redux, Tanstack Query, React Hook Form, React Testing Library, Jest, Storybook, ...), plus experience with SSG and SSR",
-    "Strong understanding of frontend methodologies (BEM, SMACSS, Atomic design) and accessibility standards (WCAG)",
-    "Decent knowledge of backend technologies (Node.js + Express, PHP, (My)SQL, MongoDB + Mongoose, Supabase, and Firebase",
-    "Proficiency in using development tools (npm, yarn, gulp, Webpack, Docker) and version control systems (Git)",
-    "Extensive experience working with APIs, including GraphQL (+ Apollo)",
-    "Extensive experience with CMS platforms (Drupal, WordPress, Squarespace, Wix)",
-    "Decent experience with optimizing page speed (Lighthouse, PageSpeed Insights), SEO, and cross-browser/cross-device testing",
-    "Decent experience with design tools (Adobe XD, Figma, Photoshop), and a good understanding of UI/UX principles"
+    "4+ years in Frontend Web Development.",
+    "Specialized in dynamic, responsive UIs using HTML, (S)CSS, JavaScript, TypeScript, React, Next.js.",
+    "Proficient in performance optimization, SEO (Webpack, Lighthouse, PageSpeed Insights).",
+    "Committed to accessible, WCAG-compliant web solutions.",
+    "Advanced in frontend methodologies (BEM, SMACSS, Atomic Design), state management (Redux, Tanstack Query).",
+    "Skilled in backend integration, database management (Node.js, Express, PHP, MongoDB, MySQL).",
+    "Experienced with APIs (GraphQL, Apollo), CMS (Drupal, WordPress).",
+    "Collaborative UI/UX design (Adobe XD, Figma, Photoshop).",
+    "Quality assurance (Jest, React Testing Library).",
+    "Agile project management and leadership."
   ],
   "softSkills": [
-    "Fluency in the English language",
-    "Consistency, reliability, dedication, and self-motivation",
-    "Inherent curiosity with a constant desire to learn and improve",
-    "Methodical and organized in approach to work, with a strong attention to detail",
-    "Possession of an open-minded and fair attitude, underscored by a commitment to kindness in interpersonal interactions",
-    "Natural ability to understand and relate to diverse human behavior and perspectives"
+    "Proficient in English, ensuring effective communication and complex concept articulation.",
+    "Consistently reliable, dedicated, self-motivated.",
+    "Inquisitive, always seeking knowledge and staying abreast of industry trends.",
+    "Methodical, organized, detail-oriented in coding and documentation.",
+    "Open-minded, promoting inclusivity, kindness, and respect.",
+    "Empathetic and adaptable, enhancing teamwork and client relations."
   ],
   "jobs": [
     {
@@ -28,8 +28,9 @@
       "period": "Aug 2021 - Feb 2024 (2 yrs 7 mos)",
       "location": "Maribor, Slovenia (Remote)",
       "tasks": [
-        "Developing and maintaining websites and web apps for clients from various sectors",
-        "Collaborating effectively with other developers, project managers, designers, and clients to ensure high-quality project outcomes"
+        "Contributed significantly to the development and maintenance of responsive and dynamic websites and web applications, with a strong focus on leveraging React and Next.js for optimal performance and user experience.",
+        "Engaged in building feature-rich, scalable front-end architectures and implementing modern React best practices, including efficient state management and server-side rendering with Next.js.",
+        "Collaborated effectively with a multidisciplinary team of developers, project managers, designers, and clients, ensuring successful project execution and delivery."
       ],
       "skills": [
         "React",
@@ -52,9 +53,9 @@
       "period": "Apr 2021 - Aug 2021 (5 mos)",
       "location": "United States (Remote)",
       "tasks": [
-        "Designed, developed, and maintained websites and eCommerce stores for clients from various sectors",
-        "Actively engaged in the full development cycle, from ideation and design through to development, testing, deployment, and review",
-        "Provided technical support to clients, troubleshooting and resolving issues to ensure optimal website functionality and user satisfaction"
+        "Led the design, development, and maintenance of websites and e-commerce stores, catering to diverse client needs across various sectors.",
+        "Actively involved in the entire development cycle, from concept to deployment, ensuring adherence to best practices and client specifications.",
+        "Provided comprehensive technical support, resolving issues to enhance website functionality and user experience."
       ],
       "skills": ["PHP", "WordPress", "SquareSpace", "Wix", "MySQL", "CSS", "Figma", "Technical Support"]
     },
@@ -66,8 +67,8 @@
       "period": "Nov 2020 - Apr 2021 (6 mos)",
       "location": "Graz, Austria (Remote)",
       "tasks": [
-        "Designed, developed, and maintained various websites for primary schools in Austria",
-        "Developed custom plugin responsible for connecting to the internal app"
+        "Specialized in creating and managing websites for primary schools, focusing on user-friendly and educational interfaces.",
+        "Developed a bespoke WordPress plugin for seamless integration with internal applications.- Specialized in creating and managing websites for primary schools, focusing on user-friendly and educational interfaces. - Developed a bespoke WordPress plugin for seamless integration with internal applications."
       ],
       "skills": ["PHP", "WordPress", "MySQL", "JavaScript", "CSS", "Sass", "Frontity/React", "Adobe XD"]
     },
@@ -79,8 +80,8 @@
       "period": "Aug 2019 - Oct 2020 (1 yr 3 mos)",
       "location": "Maribor, Slovenia (Hybrid)",
       "tasks": [
-        "Designed and developed web ads for different campaigns",
-        "Occasionally worked on adding new features to internal CMS using PHP"
+        "Designed and developed compelling web advertisements for various campaigns, optimizing for engagement and conversion.",
+        "Contributed to the enhancement of an internal CMS, implementing new features to streamline content management."
       ],
       "skills": ["HTML", "CSS", "JavaScript", "jQuery", "PHP", "Adobe Photoshop"]
     }
