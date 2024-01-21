@@ -1,16 +1,15 @@
 {
   "hardSkills": [
-    "4+ years of work experience creating modern websites and web apps",
-    "Very good knowledge of frontend technologies (HTML, CSS, Sass, JavaScript, TypeScript, React, and Next.js)",
+    "4+ years of professional experience creating modern websites and web apps",
+    "Very good knowledge of frontend technologies (HTML, (S)CSS, JavaScript, TypeScript, React, and Next.js)",
     "Strong understanding of React library best practices and conventions (Router, Redux, Tanstack Query, React Hook Form, React Testing Library, Jest, Storybook, ...), plus experience with SSG and SSR",
     "Strong understanding of frontend methodologies (BEM, SMACSS, Atomic design) and accessibility standards (WCAG)",
     "Decent knowledge of backend technologies (Node.js + Express, PHP, (My)SQL, MongoDB + Mongoose, Supabase, and Firebase",
-    "Proficiency in using development tools (npm, yarn, gulp, Webpack, Docker)",
-    "Extensive experience with version control systems (Git)",
+    "Proficiency in using development tools (npm, yarn, gulp, Webpack, Docker) and version control systems (Git)",
     "Extensive experience working with APIs, including GraphQL (+ Apollo)",
-    "Lots of experience with CMS platforms (Drupal, WordPress, Squarespace, Wix)",
+    "Extensive experience with CMS platforms (Drupal, WordPress, Squarespace, Wix)",
     "Decent experience with optimizing page speed (Lighthouse, PageSpeed Insights), SEO, and cross-browser/cross-device testing",
-    "Decent experience with design tools (Adobe XD, Figma, Photoshop), plus a good understanding of UI/UX principles"
+    "Decent experience with design tools (Adobe XD, Figma, Photoshop), and a good understanding of UI/UX principles"
   ],
   "softSkills": [
     "Fluency in the English language",
