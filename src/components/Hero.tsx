@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
         <span>Casual Gamer. </span>
         <span>Tech Enthusiast. </span>
         <span>Psychology Aficionado. </span>
-        <span>Vocal Critic of Overwork Culture. </span>
+        <span>Vocal Critic of Modern Culture. </span>
         <span>Human. </span>
       </h2>
     </section>
