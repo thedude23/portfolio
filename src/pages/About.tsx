@@ -37,6 +37,7 @@ const keywords = [
   'HTML',
   'Sass',
   'CSS',
+  'Tailwind',
   'JavaScript',
   'jQuery',
   'TypeScript',
