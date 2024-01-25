@@ -37,6 +37,7 @@ footer {
   .copyright {
     margin-right: $gap;
     font-size: $font-size-xsm;
+    color: $color-5;
 
     @include breakpoint(sm) {
       font-size: $font-size-sm;

@@ -9,7 +9,7 @@ const DarkModeToggle = () => {
   return (
     <button onClick={toggleDarkMode} className={styles.themeToggleButton}>
       {isDarkMode ? (
-        <FaSun style={{ color: 'rgb(53, 117, 245)', fontSize: '26px', marginTop: '2px' }} />
+        <FaSun style={{ color: 'rgba(210, 49, 49, 0.673)', fontSize: '26px', marginTop: '2px' }} />
       ) : (
         <FaMoon style={{ color: 'rgb(53, 117, 245)', fontSize: '26px', marginTop: '2px' }} />
       )}
