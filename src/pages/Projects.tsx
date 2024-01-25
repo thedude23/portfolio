@@ -25,6 +25,7 @@ import covidImg from '../assets/covid-19.jpg';
 import portfolioImg from '../assets/portfolio.png';
 import forkifyImg from '../assets/forkify.png';
 import tmdbImg from '../assets/tmdb.png';
+import natoursAppImg from '../assets/natours-app.png';
 import ProjectList from '../components/ProjectList';
 
 type Link = {
@@ -63,6 +64,7 @@ const imageMap: { [key: string]: string } = {
   'portfolio.png': portfolioImg,
   'forkify.png': forkifyImg,
   'tmdb.png': tmdbImg,
+  'natours-app.png': natoursAppImg,
 };
 
 const Projects: React.FC = () => {

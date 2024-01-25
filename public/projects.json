@@ -3,7 +3,7 @@
     {
       "name": "TMDB",
       "image": "tmdb.png",
-      "description": "Movie database app",
+      "description": "Movie database app (Next.js)",
       "links": [
         {
           "type": "View",
@@ -20,7 +20,7 @@
     {
       "name": "Fast React Pizza",
       "image": "fast-react-pizza.png",
-      "description": "Food ordering app",
+      "description": "Food ordering app (React)",
       "links": [
         {
           "type": "View",
@@ -35,9 +35,26 @@
       ]
     },
     {
+      "name": "Natours",
+      "image": "natours-app.png",
+      "description": "Travel tours app (Node.js/Express)",
+      "links": [
+        {
+          "type": "View",
+          "url": "#",
+          "icon": "AiFillEye"
+        },
+        {
+          "type": "Repo",
+          "url": "https://github.com/tim-koprivnik/natours-app",
+          "icon": "AiFillGithub"
+        }
+      ]
+    },
+    {
       "name": "Portfolio",
       "image": "portfolio.png",
-      "description": "Portfolio website",
+      "description": "Portfolio website (React)",
       "links": [
         {
           "type": "View",
@@ -54,7 +71,7 @@
     {
       "name": "Forkify",
       "image": "forkify.png",
-      "description": "Food recipe app",
+      "description": "Food recipe app (JS)",
       "links": [
         {
           "type": "View",
@@ -71,7 +88,7 @@
     {
       "name": "Budgety",
       "image": "budgety.png",
-      "description": "Cost/Expenses calculator app",
+      "description": "Cost/Expenses calculator app (JS)",
       "links": [
         {
           "type": "View",
@@ -88,7 +105,7 @@
     {
       "name": "PigGame",
       "image": "piggame.jpg",
-      "description": "Pig game",
+      "description": "Pig game (JS)",
       "links": [
         {
           "type": "View",
@@ -105,7 +122,7 @@
     {
       "name": "Obnova doma",
       "image": "subsidium.jpg",
-      "description": "Website",
+      "description": "Website (Wordpress)",
       "links": [
         {
           "type": "View",
@@ -122,7 +139,7 @@
     {
       "name": "Something Different",
       "image": "something-different.png",
-      "description": "Website / Blog",
+      "description": "Blog (Wordpress)",
       "links": [
         {
           "type": "View",
@@ -139,7 +156,7 @@
     {
       "name": "Ogani",
       "image": "ogani.jpg",
-      "description": "Website template",
+      "description": "Website template (HTML+CSS)",
       "links": [
         {
           "type": "View",
@@ -156,7 +173,7 @@
     {
       "name": "Natours",
       "image": "natours.png",
-      "description": "Website template",
+      "description": "Website template (HTML+CSS)",
       "links": [
         {
           "type": "View",
@@ -173,7 +190,7 @@
     {
       "name": "Nexter",
       "image": "nexter.png",
-      "description": "Website template",
+      "description": "Website template (HTML+CSS)",
       "links": [
         {
           "type": "View",
@@ -190,7 +207,7 @@
     {
       "name": "Trillo",
       "image": "trillo.png",
-      "description": "Website template",
+      "description": "Website template (HTML+CSS)",
       "links": [
         {
           "type": "View",
@@ -207,7 +224,7 @@
     {
       "name": "Crisp Studio",
       "image": "crisp-studio.png",
-      "description": "Website template",
+      "description": "Website template (HTML+CSS)",
       "links": [
         {
           "type": "View",
@@ -224,7 +241,7 @@
     {
       "name": "Allbirds",
       "image": "allbirds.png",
-      "description": "Website template",
+      "description": "Website template (HTML+CSS)",
       "links": [
         {
           "type": "View",
@@ -241,7 +258,7 @@
     {
       "name": "Netflix clone",
       "image": "netflixclone.jpg",
-      "description": "Website template",
+      "description": "Website template (HTML+CSS+JS)",
       "links": [
         {
           "type": "View",
@@ -258,7 +275,7 @@
     {
       "name": "Soundwave",
       "image": "soundwave.jpg",
-      "description": "Website template & Design",
+      "description": "Website template & Design (HTML+CSS, Figma)",
       "links": [
         {
           "type": "View",
@@ -275,7 +292,7 @@
     {
       "name": "Covid-19",
       "image": "covid-19.jpg",
-      "description": "Design",
+      "description": "Design (Figma)",
       "links": [
         {
           "type": "Repo",
@@ -287,7 +304,7 @@
     {
       "name": "Alivio",
       "image": "alivio.png",
-      "description": "Design",
+      "description": "Design (Figma)",
       "links": [
         {
           "type": "Repo",

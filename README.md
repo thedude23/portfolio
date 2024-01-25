@@ -1,12 +1,14 @@
-# My Portfolio
+# Tim Koprivnik's Portfolio
 
 This portfolio website was created using [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/), [Vite](https://vitejs.dev/), and [Netlify](https://www.netlify.com/), featuring a sleek, responsive design to showcase projects and skills.
 
 ## Features
 
 - Interactive UI to navigate between different sections.
+- Responsive design to fit all screen sizes.
 - Section to showcase projects with links and description.
 - Section to outline skills and experiences.
+- Section to display contact information and links to social media.
 
 ## Getting Started
 
@@ -27,7 +29,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Building the App
 
-To build the app for production, use the following command: npm run build or yarn build
+To build the app for production, use the following command: `npm run build` or `yarn build`
 
 This command will create a dist directory with a production build of your app.
 
@@ -36,6 +38,11 @@ This command will create a dist directory with a production build of your app.
 - React
 - Typescript
 - CSS Modules
+- Sass
+- ESLint
+- Prettier
+- Vite
+- Netlify
 
 ## License
 
