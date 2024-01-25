@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import RootLayout from './pages/Root';
 import Error from './pages/Error';
 import Home from './pages/Home';
