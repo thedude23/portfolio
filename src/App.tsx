@@ -27,9 +27,9 @@ const App: React.FC = () => {
   return (
     <ThemeProvider>
       <AnimatedCursor
-        innerSize={18}
-        outerSize={12}
-        color="127, 153, 206"
+        innerSize={42}
+        outerSize={24}
+        color="53, 117, 245"
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={3}
