@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Tim Koprivnik</title>
+        <title>TK</title>
         <meta name="description" content="Home page" />
       </Helmet>
       <Header />
