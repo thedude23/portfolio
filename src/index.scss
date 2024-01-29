@@ -70,7 +70,13 @@ a {
 
   &:hover,
   &:active {
-    color: $color-5;
+    color: $color-link--hover;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: none;
+    color: $color-link--hover;
     text-decoration: underline;
   }
 }

@@ -205,23 +205,6 @@
       ]
     },
     {
-      "name": "Trillo",
-      "image": "trillo.png",
-      "description": "Website template (HTML+CSS)",
-      "links": [
-        {
-          "type": "View",
-          "url": "https://trillo-pearl-gamma.vercel.app/",
-          "icon": "AiFillEye"
-        },
-        {
-          "type": "Repo",
-          "url": "https://github.com/tim-koprivnik/trillo",
-          "icon": "AiFillGithub"
-        }
-      ]
-    },
-    {
       "name": "Crisp Studio",
       "image": "crisp-studio.png",
       "description": "Website template (HTML+CSS)",
@@ -251,64 +234,6 @@
         {
           "type": "Repo",
           "url": "https://github.com/tim-koprivnik/allbirds",
-          "icon": "AiFillGithub"
-        }
-      ]
-    },
-    {
-      "name": "Netflix clone",
-      "image": "netflixclone.jpg",
-      "description": "Website template (HTML+CSS+JS)",
-      "links": [
-        {
-          "type": "View",
-          "url": "https://netflix-clone-sigma-red.vercel.app/",
-          "icon": "AiFillEye"
-        },
-        {
-          "type": "Repo",
-          "url": "https://github.com/tim-koprivnik/netflix-clone",
-          "icon": "AiFillGithub"
-        }
-      ]
-    },
-    {
-      "name": "Soundwave",
-      "image": "soundwave.jpg",
-      "description": "Website template & Design (HTML+CSS, Figma)",
-      "links": [
-        {
-          "type": "View",
-          "url": "https://ktix-soundwave.netlify.app/",
-          "icon": "AiFillEye"
-        },
-        {
-          "type": "Repo",
-          "url": "https://github.com/tim-koprivnik/soundwave",
-          "icon": "AiFillGithub"
-        }
-      ]
-    },
-    {
-      "name": "Covid-19",
-      "image": "covid-19.jpg",
-      "description": "Design (Figma)",
-      "links": [
-        {
-          "type": "Repo",
-          "url": "https://github.com/tim-koprivnik/covid",
-          "icon": "AiFillGithub"
-        }
-      ]
-    },
-    {
-      "name": "Alivio",
-      "image": "alivio.png",
-      "description": "Design (Figma)",
-      "links": [
-        {
-          "type": "Repo",
-          "url": "https://github.com/tim-koprivnik/alivio",
           "icon": "AiFillGithub"
         }
       ]

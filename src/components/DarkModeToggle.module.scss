@@ -10,4 +10,8 @@ button.theme-toggle-button {
   display: flex;
   margin-left: -$gap;
   z-index: 10000;
+
+  &:focus {
+    outline: none;
+  }
 }

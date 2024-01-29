@@ -1,8 +1,10 @@
 @import '../scss/library/index';
 
 .contact-page {
-  .section-title {
+  .page-title {
     text-align: center;
+    background-color: transparent;
+    border: none;
   }
 
   .contact {

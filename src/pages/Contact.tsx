@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
       <Header />
       <main className={styles.contactPage}>
         <section className={styles.contact}>
-          <h2 className={styles.sectionTitle}>Contact me</h2>
+          <h1 className={styles.pageTitle}>Contact</h1>
 
           <div className={styles.contactList}>
             <div className={styles.contactEmail}>

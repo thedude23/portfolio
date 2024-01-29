@@ -89,7 +89,6 @@ const Projects: React.FC = () => {
         mainContent={
           <MainContent className={styles.projectsPage}>
             <h1 className={styles.pageTitle}>Projects</h1>
-            <h2 className={styles.sectionTitle}>Personal projects</h2>
             <p>
               For more, check{' '}
               <a

@@ -9,13 +9,13 @@ type SkillListProps = {
 const SkillList: React.FC<SkillListProps> = ({ hardSkills, softSkills, createSpecialMarkup }) => {
   return (
     <section>
-      <h4>"Hard" skills</h4>
+      <h2>"Hard" skills</h2>
       <ul>
         {hardSkills.map((skill, index) => (
           <li key={index} dangerouslySetInnerHTML={createSpecialMarkup(skill)} />
         ))}
       </ul>
-      <h4>"Soft" skills</h4>
+      <h2>"Soft" skills</h2>
       <ul>
         {softSkills.map((skill, index) => (
           <li key={index} dangerouslySetInnerHTML={createSpecialMarkup(skill)} />

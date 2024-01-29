@@ -20,7 +20,7 @@
   h1,
   &-title {
     @include breakout;
-    background-color: $color-1;
+    background-color: transparent;
 
     span {
       color: $color-5;

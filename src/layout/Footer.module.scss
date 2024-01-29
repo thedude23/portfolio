@@ -28,8 +28,15 @@ footer {
         padding: 0 $gap-half;
       }
 
-      &:hover {
+      &:hover,
+      &:active {
         color: $color-link--hover;
+      }
+
+      &:focus {
+        outline: none;
+        color: $color-link--hover;
+        text-decoration: underline;
       }
     }
   }
