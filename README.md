@@ -51,7 +51,3 @@ This project is open-source and available under the MIT License.
 ## Contact
 
 Tim Koprivnik - t.koprivnik@gmail.com
-
-## Website
-
-https://tim-koprivnik.netlify.app/
