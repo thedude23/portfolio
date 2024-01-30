@@ -1,4 +1,4 @@
-# Tim Koprivnik's Portfolio
+# Tim Koprivnik's Portfolio v2
 
 This portfolio website was created using [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/), [Vite](https://vitejs.dev/), and [Netlify](https://www.netlify.com/), featuring a sleek, responsive design to showcase projects and skills.
 
